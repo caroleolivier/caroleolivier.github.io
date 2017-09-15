@@ -1,8 +1,27 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  color: inherit;
+}
+div {
+    line-height: 1.5;
+}
+
 .cv-wrapper {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-div.cv-wrapper a {
+.main-wrapper a {
     color: #2d7788;
 }
 .cv {
@@ -13,47 +32,28 @@ div.cv-wrapper a {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
+
 .main-wrapper {
     padding: 30px;
     padding-right: 260px;
 }
-
 .main-wrapper .section {
     padding-bottom: 20px;
 }
-
 .main-wrapper .section-title {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 600;
     color: #2d7788;
-    /* position: relative;
-    margin-top: 0;
-    margin-bottom: 20px; */
   }
 .main-wrapper .section-title .fa {
-    /* width: 30px;
-    height: 30px; */
     margin-right: 8px;
-    /* display: inline-block;
-    color: #fff;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    background: #2d7788;
-    text-align: center;
-    padding-top: 8px;
-    font-size: 16px;
-    position: relative;
-    top: -2px; */
 }
 
-.sidebar {
+
+
+.sidebar-wrapper {
     background: #42A8C0;
     position: absolute;
     right: 0;
@@ -62,10 +62,57 @@ div.cv-wrapper a {
     min-height: 800px;
     color: #fff;
 }
+.sidebar-wrapper .profile-container {
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+    padding: 20px
+}
+.sidebar-wrapper .name {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .tagline {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sidebar-wrapper .profile-img {
+    max-width: 100px;
+    margin-bottom: 15px;
+    border: 0px solid #fff;
+    border-radius: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  }
+.sidebar-wrapper .contact-list {
+    list-style: none;
+    padding-left: 20px;
+}
+.sidebar-wrapper a {
+    color: white;
+}
+.sidebar-wrapper .contact-list .fa {
+    margin-right: 5px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.sidebar-wrapper .contact-list li {
+    margin-bottom: 15px;
+}
+.sidebar-wrapper .contact-list li:last-child {
+    margin-bottom: 0;
+}
+
 
 .experience-item {
     padding-bottom: 20px;
 }
+
+
 
 .cv-footer {
     padding:20px;

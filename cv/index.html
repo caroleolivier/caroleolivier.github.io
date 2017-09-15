@@ -4,8 +4,8 @@ title: Carole's CV
 ---
 <div class="cv-wrapper">
     <div class="cv">
-        <div class="sidebar">
-            Hello this is the side bar
+        <div class="sidebar-wrapper">
+            {% include_relative sidebar.html %}
         </div>
         <div class="main-wrapper">
             {% include_relative career-profile.html %}
@@ -15,8 +15,6 @@ title: Carole's CV
             {% include_relative education.html %}
         </div>
     </div>
-    
-    
 
     {% include_relative footer.html %}
 </div>
