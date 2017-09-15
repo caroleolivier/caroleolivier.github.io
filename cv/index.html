@@ -2,12 +2,21 @@
 layout: default
 title: Carole's CV
 ---
-<div class="cv">
-    <div class="main-wrapper">
-        {% include_relative career-profile.html %}
+<div class="cv-wrapper">
+    <div class="cv">
+        <div class="sidebar">
+            Hello this is the side bar
+        </div>
+        <div class="main-wrapper">
+            {% include_relative career-profile.html %}
+        
+            {% include_relative experience.html %}
     
-        {% include_relative experience.html %}
-
-        {% include_relative education.html %}
+            {% include_relative education.html %}
+        </div>
     </div>
+    
+    
+
+    {% include_relative footer.html %}
 </div>
