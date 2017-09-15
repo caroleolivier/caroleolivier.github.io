@@ -52,6 +52,10 @@ div {
 }
 
 
+.experience-item {
+    padding-bottom: 20px;
+}
+
 
 .sidebar-wrapper {
     background: #42A8C0;
@@ -87,32 +91,68 @@ div {
     border: 0px solid #fff;
     border-radius: 100%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  }
-.sidebar-wrapper .contact-list {
-    list-style: none;
-    padding-left: 20px;
 }
 .sidebar-wrapper a {
     color: white;
 }
-.sidebar-wrapper .contact-list .fa {
+.sidebar-wrapper .sidebar-container {
+    padding-left: 20px;
+    padding-bottom: 40px;
+    line-height: 1.0;
+}
+.sidebar-wrapper .unstyled-list {
+    list-style: none;
+    padding-left: 0;
+}
+.sidebar-wrapper .unstyled-list .fa {
     margin-right: 5px;
     font-size: 18px;
     vertical-align: middle;
 }
-.sidebar-wrapper .contact-list li {
+.sidebar-wrapper .unstyled-list li {
     margin-bottom: 15px;
 }
-.sidebar-wrapper .contact-list li:last-child {
+.sidebar-wrapper .unstyled-list li:last-child {
     margin-bottom: 0;
 }
 
-
-.experience-item {
-    padding-bottom: 20px;
+.sidebar-wrapper .container-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-left: 0px;
+}
+.sidebar-wrapper .lang-desc {
+    color: rgba(255, 255, 255, 0.6);
 }
 
-
+.sidebar-wrapper .sidebar-container .item {
+    margin-bottom: 15px;
+}
+.sidebar-wrapper .sidebar-container .item:last-child {
+    margin-bottom: 0;
+}
+.sidebar-wrapper .sidebar-container .degree {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+.sidebar-wrapper .sidebar-container .meta {
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+.sidebar-wrapper .sidebar-container .item a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.sidebar-wrapper .sidebar-container .time {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    margin-bottom: 0px;
+}
 
 .cv-footer {
     padding:20px;
