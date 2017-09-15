@@ -1,4 +1,4 @@
-## Software Engineer in Emerging Markets
+### Software Engineer in Emerging Markets
 #### [Credit Suisse](https://www.credit-suisse.com/uk/en.html), London, UK, *July 2010 – Nov. 2013*
 
 

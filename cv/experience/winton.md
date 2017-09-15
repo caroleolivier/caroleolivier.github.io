@@ -1,4 +1,4 @@
-## VP Software Engineer in Technology
+### VP Software Engineer in Technology
 #### [Winton](https://www.winton.com/), London, UK, *Dec. 2013 – July 2017*
 
 

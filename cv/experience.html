@@ -1,16 +1,26 @@
 <section class="section experience-section">
         <h2 class="section-title"><i class="fa fa-briefcase"></i>Experience</h2>
 
-        {% capture winton_exp %}{% include_relative experience/winton.md %}{% endcapture %}
-        {{ winton_exp | markdownify }}
+        <div class="experience-item">
+            {% capture winton_exp %}{% include_relative experience/winton.md %}{% endcapture %}
+            {{ winton_exp | markdownify }}
+        </div>
 
-        {% capture creditsuisse_exp %}{% include_relative experience/credit-suisse.md %}{% endcapture %}
-        {{ creditsuisse_exp | markdownify }}
+        <div class="experience-item">
+            {% capture creditsuisse_exp %}{% include_relative experience/credit-suisse.md %}{% endcapture %}
+            {{ creditsuisse_exp | markdownify }}
+        </div>
 
-        {% capture rohdeandschwarz_exp %}{% include_relative experience/rohde-and-schwarz.md %}{% endcapture %}
-        {{ rohdeandschwarz_exp | markdownify }}
+        <div class="experience-item">
 
-        {% capture fleetboard_exp %}{% include_relative experience/fleetboard.md %}{% endcapture %}
-        {{ fleetboard_exp | markdownify }}
+            {% capture rohdeandschwarz_exp %}{% include_relative experience/rohde-and-schwarz.md %}{% endcapture %}
+            {{ rohdeandschwarz_exp | markdownify }}
+        </div>
+
+        <div class="experience-item">
+
+            {% capture fleetboard_exp %}{% include_relative experience/fleetboard.md %}{% endcapture %}
+            {{ fleetboard_exp | markdownify }}
+        </div>
 
 </section>
