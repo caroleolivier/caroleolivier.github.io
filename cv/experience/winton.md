@@ -1,5 +1,5 @@
-### VP Software Engineer in Technology
-#### [Winton](https://www.winton.com/), London, UK, *Dec. 2013 – July 2017*
+### VP Software Engineer in Technology  *December 2013 – July 2017*
+#### [Winton](https://www.winton.com/), London
 
 
 ##### Data Infrastructure Technology (14 months)

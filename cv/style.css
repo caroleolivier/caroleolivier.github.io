@@ -21,6 +21,11 @@ div {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+.main-wrapper {
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 270px;
+}
 .main-wrapper a {
     color: #2d7788;
 }
@@ -32,12 +37,6 @@ div {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-
-.main-wrapper {
-    padding: 30px;
-    padding-right: 260px;
-}
 .main-wrapper .section {
     padding-bottom: 20px;
 }
@@ -49,6 +48,31 @@ div {
   }
 .main-wrapper .section-title .fa {
     margin-right: 8px;
+}
+
+.main-wrapper .experience-section h3 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.main-wrapper .experience-section h4 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.main-wrapper .experience-section h5 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.main-wrapper .experience-section ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.main-wrapper em {
+    font-style: inherit;
+    font-size: 14px;
+    color: #97AAC3;
+    position: absolute;
+    right: 290px;
+    font-weight: 100;
 }
 
 

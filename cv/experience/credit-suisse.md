@@ -1,6 +1,5 @@
-### Software Engineer in Emerging Markets
-#### [Credit Suisse](https://www.credit-suisse.com/uk/en.html), London, UK, *July 2010 – Nov. 2013*
-
+### Software Engineer in Emerging Markets *July 2010 – November 2013*
+#### [Credit Suisse](https://www.credit-suisse.com/uk/en.html), London
 
 ##### Risk Services (12 months)
 * Development of a service used to map the underlying of a bond to the best Credit Default Swap match.
