@@ -1,0 +1,16 @@
+<section class="section experience-section">
+        <h2 class="section-title"><i class="fa fa-briefcase"></i>Experience</h2>
+
+        {% capture winton_exp %}{% include_relative experience/winton.md %}{% endcapture %}
+        {{ winton_exp | markdownify }}
+
+        {% capture creditsuisse_exp %}{% include_relative experience/credit-suisse.md %}{% endcapture %}
+        {{ creditsuisse_exp | markdownify }}
+
+        {% capture rohdeandschwarz_exp %}{% include_relative experience/rohde-and-schwarz.md %}{% endcapture %}
+        {{ rohdeandschwarz_exp | markdownify }}
+
+        {% capture daimler_exp %}{% include_relative experience/daimler.md %}{% endcapture %}
+        {{ daimler_exp | markdownify }}
+
+</section>
