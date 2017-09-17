@@ -6,7 +6,7 @@
 * Development of a web application for Winton’s data operation team to monitor the
 infrastructure and control the data quality.
 * Used `JavaScript` (`ES5` and `6`), `Angular 1.x`, `Karma`, `Jasmine`, `Python`, `Docker`.
-* Notable challenges: managing client requirements and working towards strong deadlines.
+* Notable challenges: managing client requirements and working towards tight deadlines.
 
 
 ##### Fund Accounting and Middle Office Solutions (12 months)
@@ -22,7 +22,7 @@ teams; deprecation of a legacy application.
 interface used by Winton’s execution team.
 * Used `C#5.0`, `WinForms`, in-house service framework, `Git`.
 * Notable challenges: refactoring the monolithic front-end application to a multi-module
-application easier to test and deploy.
+application making it easier to test and deploy.
 
 
 ##### Other notable activities
