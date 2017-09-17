@@ -22,7 +22,7 @@ teams; deprecation of a legacy application.
 interface used by Winton’s execution team.
 * Used `C#5.0`, `WinForms`, in-house service framework, `Git`.
 * Notable challenges: refactoring the monolithic front-end application to a multi-module
-application easier to test and deploy.
+application making it easier to test and deploy.
 
 
 ##### Other notable activities
