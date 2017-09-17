@@ -2,7 +2,23 @@
 layout: default
 title: Carole's CV
 ---
-<h1>CV</h1>
-<p>
-    It is on its way! (I am hoping to have one in markdown soon, I just need to figure out how :)).
-</p>
+<div class="cv-wrapper">
+    <div class="cv-content">
+        <div class="sidebar-wrapper">
+            {% include_relative side-bar/profile.html %}
+            
+            {% include_relative side-bar/contact.html %}
+            
+            {% include_relative side-bar/education.html %}
+            
+            {% include_relative side-bar/language.html %}
+        </div>
+        <div class="main-wrapper">
+            {% include_relative main-view/career-profile.html %}
+        
+            {% include_relative main-view/experience.html %}
+        </div>
+    </div>
+
+    {% include_relative footer.html %}
+</div>
