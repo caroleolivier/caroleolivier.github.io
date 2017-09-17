@@ -8,7 +8,7 @@
 
 
 ##### Bond and Rate Publisher (30 months)
-* Development of a new application for editing and publishing yield curves and bond prices for Emerging Markets.
+* Development of an application for editing and publishing yield curves and bond prices for Emerging Markets.
 * Used `C#3.0`, `WPF`, `WCF`, `NHibernate`, `Subversion`, `Team City`, `Visual Studio`, `ReSharper`, `Scrum`.
 * Notable challenges: adopting agile Scrum practices with the help of an external coach.
 
