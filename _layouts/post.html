@@ -1,8 +1,19 @@
 ---
 layout: default
 ---
+{% capture count_words %} 
+    {{ page.content | number_of_words }}
+{% endcapture %}
+<!-- {% capture time_words %} 
+    {{count_words | divided_by: 5}}
+{% endcapture %}  -->
+{% capture read_time %}
+    {{count_words | divided_by: 180}}
+{% endcapture %}
+
 <h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<p class="reading">{{read_time}}min(s)</p>
+<p>{{ page.date | date_to_string }}</p>
 
 <div class="post">
     {{ content }}
