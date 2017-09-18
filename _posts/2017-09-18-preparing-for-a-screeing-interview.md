@@ -3,7 +3,7 @@ layout: post
 title: Preparing for a screening interview
 date: 2017-09-18
 ---
-[Update 18-09-2017]
+[Updated 18-09-2017]
 
 I had a screening interview a couple of days ago and to help me prepare for it I wrote down a kind of todo list.
 
