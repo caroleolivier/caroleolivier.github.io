@@ -4,12 +4,12 @@ title: Carole's posts
 ---
 <div class="posts">
     <h1>Blog Posts</h1>
-    <ul>
+    <table>
         {% for post in site.posts %}
-        <li>
-            <span>{{ post.date | date_to_string }}</span>
-            <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        </li>
+        <tr>
+            <td class="date">{{ post.date | date_to_string }}</td>
+            <td><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></td>
+        </tr>
         {% endfor %}
-    </ul>
+    </table>
 </div>

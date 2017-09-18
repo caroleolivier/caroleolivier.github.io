@@ -1,15 +1,14 @@
 $post_background: white;
 
 .posts {
-    ul {
-        list-style: none;
-
-        li {
-            padding: 5px 0px;
-
-            span {
-                width: 100px;
-            }
+    table {
+        padding: 0px 10px;
+        
+        td {
+            padding: 3px 0px;
+        }
+        .date {
+            width: 120px;
         }
     }
 }
