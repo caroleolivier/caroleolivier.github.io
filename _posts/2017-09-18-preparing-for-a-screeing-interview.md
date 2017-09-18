@@ -41,7 +41,7 @@ I had a screening interview a couple of days ago and to help me prepare for it I
 #### Research the role
 
 ##### Role description
-* what is the main task? (back-end developer? front-end developer? technical lead? people manager? project manager? etc...)
+* what is the main task? (back-end developer? front-end developer? technical lead? etc...)
 * what is the level of responsibilities?
 * what is the level of expertise?
 * what does the team do?
