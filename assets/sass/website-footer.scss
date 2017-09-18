@@ -1,28 +1,31 @@
 .website-footer {
-    background-color: $header_background;
+    border-top: 1px solid #eaecef;
+    font-size: 1.2em;
+    margin: 20px 50px;
 
     ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0 30%;
-        overflow: hidden;
+        list-style: none;
+        
+        li {
+            display: inline;
+        }
     }
-    
-    li {
-        float: left;
-        width: 180px;
 
-        a {
-            color: $header_color;
-            font-weight: 600;
-            display: block;
-            padding: 10px 16px;
-            text-align: center;
-            text-decoration: none;
-            text-transform: uppercase;
-            
+    .info {
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    .links {
+        li {
+            margin-right: 40px;
+        }
+    
+        .fa {
+            color: $icon_color_1;
+
             &:hover {
-                background-color: lighten($header_background, 10%);
+                color: $icon_color_2;
             }
         }
     }
