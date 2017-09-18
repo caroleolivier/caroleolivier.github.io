@@ -1,39 +1,19 @@
+$background: #fbfbfb;
+$font_color_1: #2a373a;
+$font_color_2: #2d7788;
+$font_color_3: #67bace;
+$text_font_size: large;
+$font_family: 'Roboto', sans-serif;
+
 $header_background: #f17070;
+$header_color: white;
 
 body {
-    background: #fbfbfb;
-    font-family: 'Roboto', sans-serif;
     margin: 0px;
-
-    .website-header {
-        padding-left: 10px 20px;
-        background-color: $header_background;
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0 20%;
-            overflow: hidden;
-        }
-        
-        li {
-            float: left;
-            width: 25%;
-
-            a {
-                display: block;
-                color: white;
-                padding: 20px 16px;
-                text-align: center;
-                text-decoration: none;
-                text-transform: uppercase;
-                
-                &:hover {
-                    background-color: lighten($header_background, 10%);
-                }
-            }
-        }
-    }
+    background: $background;
+    font-family: $font_family;
+    color: $font_color_1;
+    -webkit-font-smoothing: antialiased;
 
     .container {
         margin: 60px auto;
@@ -42,10 +22,19 @@ body {
         h1 {
             font-size: 3em;
         }
+
         p {
-            font-size: 1.5em;
-            line-height: 1.4em;
-            color: #333;
+            font-size: $text_font_size;
+            line-height: 1.5em;
+        }
+
+        a {
+            text-decoration: none;
+            color: $font_color_2;
+            
+            &:hover {
+                color: $font_color_3;
+            }
         }
     }
 
