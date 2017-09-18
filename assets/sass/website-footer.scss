@@ -1,0 +1,29 @@
+.website-footer {
+    background-color: $header_background;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 30%;
+        overflow: hidden;
+    }
+    
+    li {
+        float: left;
+        width: 180px;
+
+        a {
+            color: $header_color;
+            font-weight: 600;
+            display: block;
+            padding: 10px 16px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            
+            &:hover {
+                background-color: lighten($header_background, 10%);
+            }
+        }
+    }
+}
