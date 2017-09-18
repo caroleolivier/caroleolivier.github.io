@@ -3,37 +3,67 @@ layout: post
 title: Preparing for a screening interview
 date: 2017-09-18
 ---
-1. Research the company
-* what is the business
-what is the industry, what is their focus, how they make money, how old are they
+I had a screening interview a couple of days ago and to help me prepare for it I wrote down a kind of todo list.
 
-* what is the company structure
-who is the CEO, how many employees, where are they located
+[Update 18-09-2017]
 
-* how do they compare to competitors
-do they have anything unique? what's their market share?
+#### Research the company
 
-* what is the company culture/what are the company values?
-chill, agressive, hippy?
+##### Company business
+* what is the industry?
+* what is their mission?
+* how do they make money?
+* where do they operate?
+* what is their market share?
 
-* what are their challenges?
+##### Company history
+* when was it created?
+* by whom?
+* why?
+* what does the future look like?
 
-For yourself
-* would you want to work for them? If yes/no then why?
+##### Company structure
+* what is the size? (how many employees?)
+* what does the orgchart look like? (size of the board? how many layers of management?)
+* where are their offices?
+
+##### Company culture
+* do they have core values?
+* how do they compare to competitors?
+
+##### Company and you
 * do you believe in their mission?
-* what can you bring?
-* can you live through their challenges?
+* would you be proud to be working for them?
+* could you grow there?
+* what could you bring?
 
 
-2. Research the role
-* what is the role
-which team? level of responsibilities? tasks?
+#### Research the role
 
-* do you fit the candidate description
-skills? seniority?
+##### Role description
+* what is the main task? (back-end developer? front-end developer? technical lead? people manager? project manager? etc...)
+* what is the level of responsibilities?
+* what is the level of expertise?
+* what does the team do?
+* who are the primary customers?
 
-* what are the career progression perspective
+##### Role progression
+* are they opportunities to grow?
 
-For yourself
-* does the daily job fit what you would want to do?
-* what would you bring to the job?
+##### Role and you
+* would you be excited to do the job on a daily basis?
+* do you fit the candidate description?
+* what would bring to the job?
+* what would you bring to the team?
+* how would you progress?
+
+
+#### Preparing questions
+
+##### about the company
+
+##### about the role
+
+##### praticality
+* interview process
+* feedback?
