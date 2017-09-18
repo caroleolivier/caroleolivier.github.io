@@ -42,18 +42,19 @@ I had a screening interview a couple of days ago and to help me prepare for it I
 #### Research the role
 
 ##### Role description
-* what is the main task? (back-end developer? front-end developer? technical lead? people manager? project manager? etc...)
+* what is the main task? (back-end developer? front-end developer? technical lead? etc...)
 * what is the level of responsibilities?
 * what is the level of expertise?
 * what does the team do?
-* who are the primary customers?
+* who are the primary customers? other interactions?
 
 ##### Role progression
 * are they opportunities to grow?
+* how to they evaluate employees?
 
 ##### Role and you
 * would you be excited to do the job on a daily basis?
-* do you fit the candidate description?
+* do you fit the candidate description? if not, how much does it matter?
 * what would bring to the job?
 * what would you bring to the team?
 * how would you progress?
@@ -61,10 +62,10 @@ I had a screening interview a couple of days ago and to help me prepare for it I
 
 #### Preparing questions
 
-##### about the company
+##### About the company
 
-##### about the role
+##### About the role
 
-##### praticality
-* interview process
-* feedback?
+##### Practicality
+* what is the interview process? who will you meet?
+* when will you hear from them next?
