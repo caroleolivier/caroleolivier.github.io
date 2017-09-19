@@ -1,47 +1,11 @@
 $text_font_size: large;
 $font_family: 'Roboto', sans-serif;
 
-$background: #fbfbfb;
-$font_color_1: #2a373a;
-$font_color_2: #2d7788;
-$font_color_3: #67bace;
-$font_color_4: #97AAC3;
-
-$header_background: #f17070;
-$header_color: white;
-
-$icon_color_1: #f9bc28;
-$icon_color_2: #ffe095;
-
 body {
     margin: 0px;
     background: $background;
     font-family: $font_family;
     color: $font_color_1;
     -webkit-font-smoothing: antialiased;
-
-    .container {
-        margin: 60px auto;
-        width: 70%;
-
-        h1 {
-            font-size: 3em;
-            color: $font_color_2;
-        }
-
-        p {
-            font-size: $text_font_size;
-            line-height: 1.5em;
-        }
-
-        a {
-            text-decoration: none;
-            color: $font_color_2;
-            
-            &:hover {
-                color: $font_color_3;
-            }
-        }
-    }
 }
 
