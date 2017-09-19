@@ -1,0 +1,30 @@
+.website-header {
+    padding-left: 10px 20px;
+    background-color: $header_background;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 20%;
+        overflow: hidden;
+    }
+    
+    li {
+        float: left;
+        width: 25%;
+
+        a {
+            color: $header_color;
+            font-weight: 600;
+            display: block;
+            padding: 20px 16px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            
+            &:hover {
+                background-color: lighten($header_background, 10%);
+            }
+        }
+    }
+}

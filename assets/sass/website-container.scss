@@ -1,0 +1,42 @@
+.website-container {
+    margin: 60px auto;
+    width: 70%;
+    font-size: 18px;
+    line-height: 1.5em;
+
+    h1 {
+        font-size: 3em;
+        color: $font_color_2;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    h5 {
+        font-size: 1.3em;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $font_color_2;
+        
+        &:hover {
+            color: $font_color_4;
+        }
+    }
+    
+    .fa {
+        color: $icon_color_1;
+    }
+}
