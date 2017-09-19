@@ -40,6 +40,7 @@ $sidebar_font_2: lighten($font_color_3, 30%);
                     margin-right: 5px;
                     font-size: 18px;
                     vertical-align: middle;
+                    color: $sidebar_font_1;
                 }
             }
 
@@ -148,6 +149,10 @@ $sidebar_font_2: lighten($font_color_3, 30%);
                 font-weight: 100;
             }
             
+            .fa {
+                color: $font_color_2;
+            }
+
             .section {
                 padding-bottom: 20px;
 
@@ -165,14 +170,18 @@ $sidebar_font_2: lighten($font_color_3, 30%);
             
             .experience-section {
                 h3 {
+                    font-size: 1.17em;
                     margin-top: 20px;
                     margin-bottom: 0px;
                 }
                 h4 {
+                    font-size: 14px;
                     margin-top: 5px;
                     margin-bottom: 0px;
                 }
                 h5 {
+                    font-size: 0.83em;
+                    font-weight: bold;
                     margin-top: 10px;
                     margin-bottom: 0px;
                 }
