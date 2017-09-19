@@ -17,7 +17,8 @@ $post_background: white;
     padding: 20px 70px 70px 70px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     background: $post_background;
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 1.5em;
 
     .header {
         h1 {
@@ -26,9 +27,7 @@ $post_background: white;
     
         .meta {
             color: $font_color_5;
-            p {
-                margin: 0px;
-            }
+            margin: 20px 0px;
         }
     }
 
