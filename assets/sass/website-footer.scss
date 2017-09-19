@@ -1,0 +1,32 @@
+.website-footer {
+    border-top: 1px solid #eaecef;
+    font-size: 1.2em;
+    margin: 20px 50px;
+
+    ul {
+        list-style: none;
+        
+        li {
+            display: inline;
+        }
+    }
+
+    .info {
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    .links {
+        li {
+            margin-right: 40px;
+        }
+    
+        .fa {
+            color: $icon_color_1;
+
+            &:hover {
+                color: $icon_color_2;
+            }
+        }
+    }
+}

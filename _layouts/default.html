@@ -3,27 +3,55 @@
     <head>
         <title> {{ page.title }}</title>
         <link rel="shortcut icon" href="/assets/images/favicon.ico?">
-        <link rel="stylesheet" type="text/css" href="/assets/css/sitetheme.css">
         <link rel="stylesheet" type="text/css" href="/assets/sass/main.css">
         <link rel="stylesheet" type="text/css" href="/3rdparty/font-awesome-4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Caveat" rel="stylesheet">
     </head>
     <body>
-        <nav>
+        <div class="website-header">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="/cv">CV</a></li>
                 <li><a href="/about">About</a></li>
             </ul>
-        </nav>
-        <div class="container">
+        </div>
+
+
+        <div class="website-container">
             {{ content }}
         </div>
-        <footer>
-            <ul>
-                <li><a href="https://github.com/caroleolivier">github.com/caroleolivier</a></li>
-            </ul>
+
+        <footer class="website-footer">
+            <div style="text-align:center">
+                    
+                <div style="float: left">
+                    <ul class="info">
+                        <li>
+                            © 2017
+                        </li>
+                    </ul>
+                </div>
+            
+                <div style="display: inline">
+                    <ul class="links">
+                        <li class="website">
+                            <a href="{{site.website}}" target="_blank"><i class="fa fa-globe"></i></a>
+                        </li>
+                        
+                        <li class="linkedin">
+                            <a href="{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                
+                        <li class="github">
+                            <a href="{{site.github}}" target="_blank"><i class="fa fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div style="float: right">
+                </div>
+            </div>
         </footer>
     </body>
 </html>

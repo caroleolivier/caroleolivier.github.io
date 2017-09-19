@@ -1,0 +1,35 @@
+$post_background: white;
+
+.posts {
+    table {
+        padding: 0px 10px;
+        
+        td {
+            padding: 3px 0px;
+        }
+        .date {
+            width: 120px;
+        }
+    }
+}
+
+.post {
+    padding: 20px 70px 70px 70px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background: $post_background;
+
+    .header {
+        h1 {
+            margin-bottom: 10px;
+        }
+    
+        .meta {
+            color: $font_color_5;
+            margin: 20px 0px;
+        }
+    }
+
+    .content {
+        margin-top: 40px;
+    }
+}

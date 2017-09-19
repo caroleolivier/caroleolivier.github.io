@@ -1,25 +1,18 @@
-$cv_background: #fbfbfb;
-$cv_content_font_1: #545E6C;
-$cv_content_title_1: #2d7788;
-$cv_content_title_3: #97AAC3;
+$cv_background: white;
 
-$sidebar_background: #42A8C0;
-$sidebar_font_1: #fff;
-$sidebar_font_2: rgba(255, 255, 255, 0.6);
+$sidebar_background: $font_color_3;
+$sidebar_font_1: white;
+$sidebar_font_2: lighten($font_color_3, 30%);
 
 .cv-wrapper {
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-
     .cv-content {
         position: relative;
-        color: $cv_content_font_1;
         background: $cv_background;
         font-size: 14px;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
         .sidebar-wrapper {
-            background: $sidebar_background;
+            background: $font_color_3;
             position: absolute;
             right: 0;
             width: 240px;
@@ -28,7 +21,7 @@ $sidebar_font_2: rgba(255, 255, 255, 0.6);
             color: $sidebar_font_1;
 
             a {
-                color: $sidebar_font_1;
+                color: inherit;
             }
 
             .unstyled-list {
@@ -47,6 +40,7 @@ $sidebar_font_2: rgba(255, 255, 255, 0.6);
                     margin-right: 5px;
                     font-size: 18px;
                     vertical-align: middle;
+                    color: $sidebar_font_1;
                 }
             }
 
@@ -69,7 +63,6 @@ $sidebar_font_2: rgba(255, 255, 255, 0.6);
 
                     a {
                         font-size: 14px;
-                        color: $sidebar_font_2;
                     }
 
                     &:last-child {
@@ -92,6 +85,8 @@ $sidebar_font_2: rgba(255, 255, 255, 0.6);
                     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
                 }
                 .name {
+                    color: inherit;
+                    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
                     font-size: 32px;
                     font-weight: 900;
                     margin-top: 0;
@@ -106,12 +101,6 @@ $sidebar_font_2: rgba(255, 255, 255, 0.6);
                 }
             }
 
-            .language-container {
-                .lang-desc {
-                    color: $sidebar_font_2;
-                }
-            }
-
             .education-container {
                 margin-bottom: 14px;
 
@@ -121,6 +110,7 @@ $sidebar_font_2: rgba(255, 255, 255, 0.6);
                     margin-bottom: 3px;
                 }
                 .meta {
+                    color: $sidebar_font_2;
                     font-weight: 500;
                     margin-bottom: 4px;
                     margin-top: 0;
@@ -129,6 +119,12 @@ $sidebar_font_2: rgba(255, 255, 255, 0.6);
                     color: $sidebar_font_2;
                     font-weight: 500;
                     margin-bottom: 0px;
+                }
+            }
+
+            .language-container {
+                .lang-desc {
+                    color: $sidebar_font_2;
                 }
             }
         }
@@ -142,17 +138,21 @@ $sidebar_font_2: rgba(255, 255, 255, 0.6);
                 line-height: 1.5;
             }
             a {
-                color: $cv_content_title_1;
+                color: $font_color_2;
             }
             em {
                 font-style: inherit;
                 font-size: 14px;
-                color: $cv_content_title_3;
+                color: $font_color_5;
                 position: absolute;
                 right: 290px;
                 font-weight: 100;
             }
             
+            .fa {
+                color: $font_color_2;
+            }
+
             .section {
                 padding-bottom: 20px;
 
@@ -160,7 +160,7 @@ $sidebar_font_2: rgba(255, 255, 255, 0.6);
                     text-transform: uppercase;
                     font-size: 20px;
                     font-weight: 600;
-                    color: $cv_content_title_1;
+                    color: $font_color_2;
 
                     .fa {
                         margin-right: 8px;
@@ -170,14 +170,18 @@ $sidebar_font_2: rgba(255, 255, 255, 0.6);
             
             .experience-section {
                 h3 {
+                    font-size: 1.17em;
                     margin-top: 20px;
                     margin-bottom: 0px;
                 }
                 h4 {
+                    font-size: 14px;
                     margin-top: 5px;
                     margin-bottom: 0px;
                 }
                 h5 {
+                    font-size: 0.83em;
+                    font-weight: bold;
                     margin-top: 10px;
                     margin-bottom: 0px;
                 }
