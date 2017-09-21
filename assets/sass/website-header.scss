@@ -1,23 +1,24 @@
+$header_height: 50px;
+
 .website-header {
-    padding-left: 10px 20px;
     background-color: $header_background;
+    height: $header_height;
+    line-height: $header_height;
 
     ul {
         list-style-type: none;
         margin: 0;
-        padding: 0 20%;
-        overflow: hidden;
     }
     
     li {
         float: left;
-        width: 25%;
 
         a {
             color: $header_color;
             font-weight: 600;
             display: block;
-            padding: 20px 16px;
+            padding: 0px 16px;
+            width: 150px;
             text-align: center;
             text-decoration: none;
             text-transform: uppercase;

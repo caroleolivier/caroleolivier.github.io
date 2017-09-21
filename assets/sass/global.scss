@@ -13,3 +13,17 @@ body {
     font-size: 26px;
     color: #f17070;
 }
+
+
+.horizontal-stack {
+    text-align: center;
+    .left-item {
+        float: left;
+    }
+    .middle-item {
+        display: inline;
+    }
+    .right-item {
+        float: right;
+    }
+}
