@@ -9,23 +9,36 @@
     </head>
     <body>
         <div class="website-header">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/cv">CV</a></li>
-                <li><a href="/about">About</a></li>
-            </ul>
-        </div>
+            <div class="horizontal-stack">
+                    
+                <div class="left-item">
+                    <!-- <div class="signature">
+                        CO
+                    </div> -->
+                </div>
+            
+                <div class="middle-item">
+                </div>
 
+                <div class="right-item">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/cv">CV</a></li>
+                        <li><a href="/about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <div class="website-container">
             {{ content }}
         </div>
 
         <footer class="website-footer">
-            <div style="text-align:center">
+            <div class="horizontal-stack">
                     
-                <div style="float: left">
+                <div class="left-item">
                     <ul class="info">
                         <li>
                             © 2017
@@ -33,7 +46,7 @@
                     </ul>
                 </div>
             
-                <div style="display: inline">
+                <div class="middle-item">
                     <ul class="links">
                         <li class="website">
                             <a href="{{site.website}}" target="_blank"><i class="fa fa-globe"></i></a>
@@ -49,7 +62,7 @@
                     </ul>
                 </div>
             
-                <div style="float: right">
+                <div class="right-item">
                 </div>
             </div>
         </footer>

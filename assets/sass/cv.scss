@@ -1,8 +1,7 @@
 $cv_background: white;
 
-$sidebar_background: $font_color_3;
 $sidebar_font_1: white;
-$sidebar_font_2: lighten($font_color_3, 30%);
+$sidebar_font_2: lighten($cv_profile_background, 30%);
 
 .cv-wrapper {
     .cv-content {
@@ -12,7 +11,7 @@ $sidebar_font_2: lighten($font_color_3, 30%);
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
         .sidebar-wrapper {
-            background: $font_color_3;
+            background: $cv_profile_background;
             position: absolute;
             right: 0;
             width: 240px;
