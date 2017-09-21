@@ -36,7 +36,7 @@ I wanted to be able to have a modern and customisable CV but also be able to eas
 
 **Freedom to style**
 
-I am not a website designer but so far I felt like I had great freedom to do whatever I wanted with my website. Jekyll even supports using [Sass](http://sass-lang.com/) (which makes your styling sheets more maintainable than pure CSS).
+I am not a website designer but so far I felt like I had great freedom to do whatever I wanted with my website. Jekyll even supports [Sass](http://sass-lang.com/) (which makes your styling sheets more maintainable than pure CSS).
 
 
 **Easy deployment (one-click or similar)**
@@ -46,7 +46,7 @@ Deployment is super easy. All you have to do is make a change on the master bran
 **Reliable**
 
 I don't have huge requirements in term of traffic or be able to push changes very frequently but I want my website to become the source of my professional life on the Internet so it has to be reliable: if the website goes down I am going to look bad.
-So here I am blindly trusting GitHub and purely relying on their reputation (To be honest I haven't read the terms and conditions of GitHub Pages and I have no idea what their SLA are).
+I didn't do any deep analysis of GitHub reliability, I am blindly trusting the company and purely relying on their reputation and my experience with them (To be honest I haven't read the terms and conditions of GitHub Pages and I have no idea what their SLA are).
 
 However, if things go bad, I can always move away from GitHub Pages and host my Jekyll generated site on AWS or Google Cloud. This being said if GitHub Pages goes down there will be more important problems to fix as the documentation of widely used libraries is hosted there.
 
