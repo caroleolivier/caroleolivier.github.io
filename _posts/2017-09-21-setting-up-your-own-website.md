@@ -12,11 +12,10 @@ It really depends on your skills, your time and how much control you want to hav
 To help me decide I wrote down a list of requirements (I will talk about it in details below), I looked around a bit and found (what I think) is the perfect solution: [GitHub Pages](https://pages.github.com/).
 
 From Github Pages website:
-> CAROLE: CHANGE BLOCKQUOTE STYLE
 
 > GitHub Pages is a static site hosting service.
-
-> GitHub Pages is designed to host your personal, organization, or project pages directly from a GitHub repository.
+<br />
+> It is designed to host your personal, organization, or project pages directly from a GitHub repository.
 
 Let's have a look at my list of requirements now and why I thought GitHub Pages gave me everything I needed:
 
