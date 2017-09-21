@@ -1,7 +1,7 @@
 .website-container {
     margin: 60px auto;
     width: 70%;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.5em;
 
     h1 {
@@ -36,6 +36,16 @@
         }
     }
     
+    blockquote {
+        border-left: solid 4px $font_color_4;
+        background: $background;
+        font-style: italic;
+
+        p {
+            margin-left: 10px;
+        }
+    }
+
     .fa {
         color: $icon_color_1;
     }
