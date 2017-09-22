@@ -7,7 +7,7 @@ A couple of days ago, I went through this React [tutorial](guide](https://facebo
 
 As usual, I searched the web to find a tutorial and as usual I found some good ones. I settled for that very good [7-step walkthrough guide](http://andrewhfarmer.com/build-your-own-starter/#0-intro). I changed a couple of things but it is very complete if you want to start from scratch. You can find my repo [here](https://github.com/caroleolivier/minimal-react-starter) with the code.
 
-Below are the dependencies I added to get my React app working:
+Below are the dependencies I added to get my React app working (additionally to React obviously!):
 
 ##### Babel
 [Babel](https://babeljs.io/) is a transpiler that allows you to use the latest JavaScript version by transpiling down your code to ES5, an older version widely supported by browsers. So if you want to use the latest shiny JavaScript features, it is very useful.
