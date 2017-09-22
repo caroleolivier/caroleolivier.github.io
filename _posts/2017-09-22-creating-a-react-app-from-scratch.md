@@ -5,7 +5,7 @@ date: 2017-09-22
 ---
 A couple of days ago, I went through this React [tutorial](https://facebook.github.io/react/docs/hello-world.html). I wrote a few words about it in a previous [post](https://caroleolivier.github.io/blog/2017/09/15/a-tast-of-react). In the [installation step](https://facebook.github.io/react/docs/installation.html) I used the library [Create React App](https://github.com/facebookincubator/create-react-app) to create the skeleton of a working app and avoid spending too much time setting everything up. Today I went back to this step and set up everything myself. I wanted to really understand what is needed to get a React app up and running, especially understand what dependencies I introduce when I choose React as a web development library.
 
-As usual, I searched the web to find a tutorial and as usual I found some good ones. I settled for that very good [7-step walkthrough guide](http://andrewhfarmer.com/build-your-own-starter/#0-intro). I changed a couple of things but it is very complete if you want to start from scratch. You can find my repo with the code [here](https://github.com/caroleolivier/minimal-react-starter).
+As usual, I searched the web to find a tutorial and as usual I found some good ones. I settled for this very good [7-step walkthrough guide](http://andrewhfarmer.com/build-your-own-starter/#0-intro). I changed a couple of things but it is very complete if you want to start from scratch. You can find my repo with the code [here](https://github.com/caroleolivier/minimal-react-starter).
 
 Below are the dependencies I added to get my React app working (additionally to installing React obviously!).
 Note that I added all the dependencies using [npm](https://www.npmjs.com/).
@@ -30,7 +30,7 @@ webpack is also very configurable and provides a bunch of very useful features l
 
 ##### webpack-dev-server
 
-Finally, in order to test my application locally I installed a web server.
+Finally, in order to test my application locally, I installed a web server.
 In the tutorial I referenced at the beginning of this post they use [ExpressJS](http://expressjs.com/). I am not familiar with that web server at all and decided to stick to the one I know and like: [webpack-dev-server](https://webpack.js.org/guides/development/#using-webpack-dev-server).
 You have to install it as an extra dependency but it integrates very well with webpack. If you have never used it I recommend checking it out.
 
