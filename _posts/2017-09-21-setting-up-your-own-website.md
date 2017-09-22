@@ -9,7 +9,7 @@ When it comes to setting up your own website, there are tons of free solutions a
 
 It really depends on your skills, your time and how much control you want to have over things like customisation, availability, reliability, etc...
 
-To help me decide I wrote down a list of requirements (I will talk about it in details below), I looked around a bit and found (what I think) is the perfect solution: [GitHub Pages](https://pages.github.com/).
+To help me decide I wrote down a list of requirements (I will talk about it in details below), I looked around a bit and found (what I think is) the perfect solution: [GitHub Pages](https://pages.github.com/).
 
 From Github Pages website:
 
@@ -17,11 +17,11 @@ From Github Pages website:
 <br />
 > It is designed to host your personal, organization, or project pages directly from a GitHub repository.
 
-Let's have a look at my list of requirements now and why I thought GitHub Pages gave me everything I needed:
+Let's have a look at my list of requirements and why I thought GitHub Pages gave me everything I needed:
 
 **Easy setup**
 
-It only took me a couple of hours to get everything up and running. I used this [guide](http://jmcglone.com/guides/github-pages/) by [Jonathan McGlone](http://jmcglone.com/) I cannot recommend it enough.
+It only took me a couple of hours to get everything up and running. I used this [guide](http://jmcglone.com/guides/github-pages/) by [Jonathan McGlone](http://jmcglone.com/) and I cannot recommend it enough.
 
 
 **Easily add blog post content**
@@ -32,7 +32,7 @@ Behind the scene it uses [Jekyll](https://jekyllrb.com/), a static web site gene
 
 **Host CV and easily maintain content**
 
-I wanted to be able to have a modern and customisable CV but also be able to easily add content to it (new job, experience, etc...) and if needed easily be able to move it to another platform. Again, very easily feasible thanks to Jekyll in the same way as it is for blog content.
+I wanted to be able to have a modern and customisable CV but also be able to easily add content to it (new job, experience, etc...) and if needed be able to move it to another platform without too much effort. Again, this is very easily feasible thanks to Jekyll in the same way as it is for blog content.
 
 **Freedom to style**
 
@@ -46,7 +46,7 @@ Deployment is super easy. All you have to do is make a change on the master bran
 **Reliable**
 
 I don't have huge requirements in term of traffic or be able to push changes very frequently but I want my website to become the source of my professional life on the Internet so it has to be reliable: if the website goes down I am going to look bad.
-I didn't do any deep analysis of GitHub reliability, I am blindly trusting the company and purely relying on their reputation and my experience with them (To be honest I haven't read the terms and conditions of GitHub Pages and I have no idea what their SLA are).
+With GitHub I think it is fair to say that it is reliable although to be honest I didn't do any deep analysis of its reliability. I am more blindly trusting them based on their reputation and my experience with them (I haven't read the terms and conditions of GitHub Pages either and I have no idea what their SLA are).
 
 However, if things go bad, I can always move away from GitHub Pages and host my Jekyll generated site on AWS or Google Cloud. This being said if GitHub Pages goes down there will be more important problems to fix as the documentation of widely used libraries is hosted there.
 
