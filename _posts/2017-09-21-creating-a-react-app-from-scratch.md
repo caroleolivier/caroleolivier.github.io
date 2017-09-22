@@ -18,7 +18,7 @@ In the case of React app, it is even more useful as it can also transpile [JSX](
 From webpack's website:
 > webpack is a module bundler for modern JavaScript applications. When webpack processes your application, it recursively builds a dependency graph that includes every module your application needs, then packages all of those modules into a small number of bundles - often only one - to be loaded by the browser.
 
-So webpack takes your code base, resolves the dependencies and outputs one single .js file with everything. If you are developping a web application, all you have to do is then include that single JavaScript in your HTML somewhere and the browser will load it.
+So webpack takes your code base, resolves the dependencies and outputs one single .js file with everything. If you are developping a web application, all you have to do is then include that single JavaScript file in your HTML somewhere and the browser will load it.
 
 webpack is also very configurable and provides a bunch of very useful features like [module](https://webpack.js.org/configuration/module/) (allows you define how to load modules or files, e.g. load my code using Babel); [plugins](https://webpack.js.org/plugins/) (allow you to run extra bits of code on the bundle like minimising it); and many others I am not familiar with (yet!).
 
