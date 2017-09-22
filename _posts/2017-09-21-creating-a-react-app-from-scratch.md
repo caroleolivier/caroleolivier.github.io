@@ -29,4 +29,5 @@ You have to install it as an extra dependency but it integrates very well with w
 
 <br/>
 
-So writing an a React app from scratch was pretty easy (well thanks to Babel and webpack) and not very different to writing a normal web app. It only took me 2 hours to install everything and that's because I took my time! So if you are new to web development, I hightly recommend reading up about webpack, Babel and understand how to configure them.
+So writing an app with React from scratch was pretty easy (well thanks to Babel and webpack) and not very different to writing a normal web app. It only took me 2 hours to install everything and that's because I took my time!
+If you are new to web development and are jumping straight into React, I highly recommend investing some time reading about webpack and Babel, understand what they do and how to configure them.
