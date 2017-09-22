@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a React app from scratch
-date: 2017-09-21
+date: 2017-09-22
 ---
 A couple of days ago, I went through this React [tutorial](guide](https://facebook.github.io/react/docs/hello-world.html)). I wrote a few words about it in a previous [post](https://caroleolivier.github.io/blog/2017/09/15/a-tast-of-react). In the [installation step](https://facebook.github.io/react/docs/installation.html) I used the library [Create React App](https://github.com/facebookincubator/create-react-app) to create the skeleton of a working app and avoid spending too much time setting everything up. Today I went back to this step and set up everything myself. I wanted to really understand what is needed to get a React app up and running, especially understand what dependencies I introduce when I choose React as a web development library.
 
