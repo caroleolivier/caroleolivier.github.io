@@ -25,7 +25,7 @@ Then, I installed [webpack](https://webpack.js.org). From webpack's website:
 
 So webpack takes your code base, resolves the dependencies and outputs one single .js file containing everything. If you are developping a web application, all you have to do is to include that single JavaScript file in your HTML somewhere and the browser will load it.
 
-webpack is also very configurable and provides a bunch of very useful features like [module](https://webpack.js.org/configuration/module/) (allows you define how to load modules or files, e.g. load my code using Babel); [plugins](https://webpack.js.org/plugins/) (allow you to run extra bits of code on the bundle like minimising it); and many others I am not familiar with (yet!). Its configuration can be a bit overwhelming but the doc is really good and you can find plenty of information online.
+webpack is also very configurable and provides a bunch of very useful features like [modules](https://webpack.js.org/configuration/module/) which allow you to define how to load modules or files, e.g. load my code using Babel; [plugins](https://webpack.js.org/plugins/) which allow you to run extra bits of code on the bundle like minimising it; and many others I am not familiar with (yet!). Its configuration can be a bit overwhelming but the documentation is really good and you can find plenty of information online.
 
 
 ##### webpack-dev-server
