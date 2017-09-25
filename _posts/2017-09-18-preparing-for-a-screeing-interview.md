@@ -50,7 +50,7 @@ I had a screening interview a couple of days ago and to help me prepare for it I
 
 ##### Role progression
 * are they opportunities to grow?
-* how to they evaluate employees?
+* how do they evaluate employees?
 
 ##### Role and you
 * would you be excited to do the job on a daily basis?
