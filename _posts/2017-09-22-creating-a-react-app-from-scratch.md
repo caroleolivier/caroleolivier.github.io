@@ -5,7 +5,7 @@ date: 2017-09-22
 ---
 A couple of days ago, I went through this React [tutorial](https://facebook.github.io/react/docs/hello-world.html). I wrote a few words about it in a previous [post](https://caroleolivier.github.io/blog/2017/09/15/a-tast-of-react). In the [installation step](https://facebook.github.io/react/docs/installation.html) I used the library [Create React App](https://github.com/facebookincubator/create-react-app) to create the skeleton of a working app and avoid spending too much time setting everything up. Today I went back to this step and set up everything myself. I wanted to really understand what is needed to get a React app up and running, especially understand what dependencies I introduce when I choose React as a web development library.
 
-As usual, I searched the web to find a tutorial and as usual I found some good ones. I settled for this very good [7-step walkthrough guide](http://andrewhfarmer.com/build-your-own-starter/#0-intro). I changed a couple of things but it is very complete if you want to start from scratch. You can find my repo with the code [here](https://github.com/caroleolivier/minimal-react-starter).
+As usual, I searched the web to find a tutorial and as usual I found some good ones. I settled for this very good [7-step walkthrough guide](http://andrewhfarmer.com/build-your-own-starter/#0-intro). I changed a couple of things but it is very complete if you want to start from scratch. You can find my repo with the code [here](https://github.com/caroleolivier/minimal-react-starter/tree/v1.0.0).
 
 Below are the dependencies I added to get my React app working (additionally to installing React obviously!).
 Note that I added all the dependencies using [npm](https://www.npmjs.com/).
