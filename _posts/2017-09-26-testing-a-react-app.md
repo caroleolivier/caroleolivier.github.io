@@ -18,12 +18,12 @@ You can find the code I am referring to [here](https://github.com/caroleolivier/
 In order to run my tests I used [Jest](https://facebook.github.io/jest/). Jest is a JavaScript testing solution developed by Facebook. I installed it using npm: `npm install --save-dev jest` and added an npm script called `test` pointing to Jest (it helps with running the tests: `npm run test`).
 
 In order to test my setup I then wrote a trivial test:
-
+```
     // sum.test.js
     test('adds 1 + 2 to equal 3', () => {
         expect(1 + 2).toBe(3);
     });
-
+```
 I run `npm run test` and it worked perfectly so Jest was all set.
 
 
@@ -37,7 +37,7 @@ No configuration was needed, it is enabled by default once installed (magic...).
 
 I tested a very simple component called Counter, the code is [here](https://github.com/caroleolivier/minimal-react-starter/blob/master/src/Counter.js) (it has a button that increments a counter every time it is clicked).
 The first thing I decided to test was checking that the component renders without failures. This is how you can do it with Jest:
-
+```
     import ReactDOM from 'react-dom';
 
     describe('Counter component', () => {
@@ -46,7 +46,7 @@ The first thing I decided to test was checking that the component renders withou
             expect(() => ReactDOM.render(<Counter/>, div)).not.toThrow();
         });
     });
-
+```
 This test renders the Counter component in the DOM and checks that no exception is thrown. It doesn't test much but if your component has some child dependencies that are broken or you made a change that breaks the DOM it will tell you.
 It is also useful when you migrate or upgrade major versions of certain libraries (e.g. React) and want to check that it does not have major impacts such as breaking your DOM.
 
@@ -56,7 +56,7 @@ It is also useful when you migrate or upgrade major versions of certain librarie
 Next, I tested that the actual DOM (the HTML tree) was correct when rendered for the first time. I did that using Jest [snapshot functionality](https://facebook.github.io/jest/docs/en/snapshot-testing.html): it basically allows you to check that the DOM generated for your component hasn't changed by comparing the HTML tree against a snapshot you are providing to the test. You can provide the snapshot yourself or you can use the one created automatically the first time you run the test (just make sure it does not contain an error already).
 
 This is my test:
-
+```
     import testRenderer from 'react-test-renderer';
     import Counter from './Counter';
 
@@ -69,9 +69,9 @@ This is my test:
             expect(tree).toMatchSnapshot("rendering");
         });
     });
-
+```
 And this is the snapshot that was generated the first time I run the test:
-
+```
     // Jest Snapshot v1, https://goo.gl/fbAQLP
 
     exports[`rendering 1`] = `
@@ -81,7 +81,7 @@ And this is the snapshot that was generated the first time I run the test:
     0
     </button>
     `;
-
+```
 This is the first time I do that kind of testing and I wonder in practice how useful and maintanable this is. If you add more cases or if your component is more complex how developer-friendly does it become? I need to have used it on a real life project to decide but for now I tested the functionality and I found it pretty cool for a simple component like mine (maybe this is the key, it forces you to keep your component super simple ;))
 
 Note that for this test I also added an extra npm dependency to [react-test-renderer](https://www.npmjs.com/package/react-test-renderer): `npm install --save-dev react-test-renderer` (react-test-renderer is a utility that provides renderers that don't depend on DOM).
@@ -96,23 +96,23 @@ For that purpose I used [Enzyme](http://airbnb.io/enzyme/). Enzyme is developed 
 >  a JavaScript Testing utility for React that makes it easier to assert, manipulate, and traverse your React Components' output. 
 
 For the installation I followed this guide: [Working with React 15](http://airbnb.io/enzyme/docs/installation/react-15.html). First, you install two new npm dependencies `npm install --save-dev enzyme enzyme-adapter-react-15` and then you need to add the piece of code below somewhere in you project (I haven't looked yet what this is for):
-
+```
     import { configure } from 'enzyme';
     import Adapter from 'enzyme-adapter-react-15';
 
     configure({ adapter: new Adapter() });
-
+```
 I added mine in a file called enzyme-setup.js and configured Jest to pick it up on startup:
-
+```
     // jest.config.js
     module.exports = {
         setupFiles: [
             './enzyme.setup.js'
         ]
     };
-
+```
 The last step is to finally write the test. In my case I wrote a test checking that the Counter component increments its counter by one every time the button is clicked:
-
+```
     describe('Counter component', () => {
         test('increments counter on click event', () => {
             const counterWrapper = shallow(<Counter />);
@@ -124,7 +124,7 @@ The last step is to finally write the test. In my case I wrote a test checking t
             expect(counter.state.counter).toBe(1);
         });
     });
-
+```
 
 <br/>
 

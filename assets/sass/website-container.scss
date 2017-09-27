@@ -46,6 +46,14 @@
         }
     }
 
+    code {
+        background: $background;
+    }
+
+    pre.highlight {
+        background: $background;
+    }
+
     .fa {
         color: $icon_color_1;
     }
