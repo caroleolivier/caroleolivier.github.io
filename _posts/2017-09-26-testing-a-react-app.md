@@ -53,7 +53,7 @@ It is also useful when you migrate or upgrade major versions of certain librarie
 
 #### Testing DOM content of a Component
 
-Next, I tested that the actual DOM (the HTML tree) was correct when rendered for the first time. I did that using Jest [snapshot functionality](https://facebook.github.io/jest/docs/en/snapshot-testing.html): it basically allows you to check that the DOM generated for your component hasn't changed by comparing the HTML tree against a snapshot you are providing to the test. You can provide the snapshot yourself or you can use the one created automatically the first time you run the test (just make sure it does not contain an error already).
+Next, I tested that the actual DOM (the HTML tree) was correct when rendered for the first time. I did that using Jest [snapshot functionality](https://facebook.github.io/jest/docs/en/snapshot-testing.html): it basically allows you to check that the DOM generated for your component hasn't changed by comparing the HTML tree against a snapshot you provide to the test. You can provide the snapshot yourself or you can use the one created automatically the first time you run the test (just make sure it does not contain an error already).
 
 This is my test:
 ```
@@ -82,7 +82,7 @@ And this is the snapshot that was generated the first time I run the test:
     </button>
     `;
 ```
-This is the first time I do that kind of testing and I wonder in practice how useful and maintanable this is. If you add more cases or if your component is more complex how developer-friendly does it become? I need to have used it on a real life project to decide but for now I tested the functionality and I found it pretty cool for a simple component like mine (maybe this is the key, it forces you to keep your component super simple ;))
+This is the first time I have done that kind of testing and I wonder in practice how useful and maintanable this is. If you add more cases or if your component is more complex how developer-friendly does it become? I will need to use it on a real life project to decide but for now I tested the functionality and I found it pretty cool for a simple component like mine (maybe this is the key, it forces you to keep your component super simple ;))
 
 Note that for this test I also added an extra npm dependency to [react-test-renderer](https://www.npmjs.com/package/react-test-renderer): `npm install --save-dev react-test-renderer` (react-test-renderer is a utility that provides renderers that don't depend on DOM).
 
