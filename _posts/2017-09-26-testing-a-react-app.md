@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Testing a React app
+title: Testing a React application
 date: 2017-09-26
 ---
 
