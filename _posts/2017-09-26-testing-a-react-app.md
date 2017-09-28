@@ -9,7 +9,7 @@ I spent the morning looking at ways to add tests to my React application. In thi
 Browsing around, it seems that the stack [React](https://facebook.github.io/react/), [Jest](https://facebook.github.io/jest/) and [Enzyme](http://airbnb.io/enzyme/) is quite popular.
 Let's have a look at how it can help.
 
-**Disclaimer: if you came across that article, please bear in mind that I am nowhere near an expert in these libraries so please be very critical! (also feel free to submit pull request or comment on github if you think something can be improved :))**
+**Disclaimer: if you come across this article, please bear in mind that I am nowhere near an expert in these libraries so please be very critical! (also feel free to submit pull request or comment on github if you think something can be improved :))**
 
 You can find the code I am referring to [here](https://github.com/caroleolivier/minimal-react-starter/tree/v2.0.0) at v2.0.0.
 
