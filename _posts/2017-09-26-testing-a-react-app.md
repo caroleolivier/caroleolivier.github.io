@@ -128,4 +128,6 @@ The last step is to finally write the test. In my case I wrote a test checking t
 
 <br/>
 
-And that's it! I am all set for the next step, i.e. write beautiful and tested web applications using React :)
+So to summarise, to create a React application from scratch and be able to test it I used: [React](https://facebook.github.io/react/), [Babel](https://babeljs.io), [webpack](webpack.js.org), [webpack-dev-server](https://webpack.js.org/configuration/dev-server/), [Jest](https://facebook.github.io/jest/) and [Enzyme](airbnb.io/enzyme/).
+
+I am now ready for the next step, i.e. working on a bigger project than a single component React application :)
