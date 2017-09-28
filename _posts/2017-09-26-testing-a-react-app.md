@@ -70,7 +70,7 @@ This is my test:
         });
     });
 ```
-And this is the snapshot that was generated the first time I run the test:
+And this is the snapshot that was generated the first time I ran the test:
 ```
     // Jest Snapshot v1, https://goo.gl/fbAQLP
 
