@@ -32,7 +32,7 @@ I now have a CI tool set up for my [project](https://github.com/caroleolivier/mi
 
 _Build lifecycle_
 
-I found that [documentation page](https://docs.travis-ci.com/user/customizing-the-build#The-Build-Lifecycle) very useful to understand what Travis is doing when it builds and tests. This will certainly become handy later when/if my build becomes more complex.
+I found that [documentation page](https://docs.travis-ci.com/user/customizing-the-build#The-Build-Lifecycle) about Travis build lifecycle. I think it is worth reading to get an idea of what happened at build time.
 
 _Build Status icon_
 
