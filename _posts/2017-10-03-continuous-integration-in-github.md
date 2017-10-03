@@ -25,4 +25,13 @@ Done!
 
 I now have a CI tool set up for my [project](https://github.com/caroleolivier/minimal-react-starter/tree/v3.0.0) and can monitor the status on the [Build Status page](https://travis-ci.org/caroleolivier/minimal-react-starter) (as well as being notified automatically) so cool!
 
-As a bonus, you can also add the build status to the README file of you project as described [here](https://docs.travis-ci.com/user/status-images/). This is the current status of my project [![Build Status](https://travis-ci.org/caroleolivier/minimal-react-starter.svg?branch=master)](https://travis-ci.org/caroleolivier/minimal-react-starter) hopefully it is green ^^
+
+##### A few useful notes
+
+_Build Status icon_
+
+You can add the status of your build to any markdown file as described [here](https://docs.travis-ci.com/user/status-images/). This is the current status of my project [![Build Status](https://travis-ci.org/caroleolivier/minimal-react-starter.svg?branch=master)](https://travis-ci.org/caroleolivier/minimal-react-starter) hopefully it is green ^^
+
+_Linter for .travis.yml_
+
+Travis has developed an [online linter](http://lint.travis-ci.org/) very useful if you have syntax errors.
