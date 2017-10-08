@@ -9,7 +9,7 @@ Today I looked at how to style it.
 
 I have limited experience of styling websites (I have only used CSS and SASS in the past) so I googled the subject and found many, many solutions. I won't walk you through all of them as this is not the subject of this post, I will only describe the solution I chose and how I set it up. If you would like to know more I highly recommend this [post](http://andrewhfarmer.com/how-to-style-react/) by Andrew Farmer, it is very informative and very well written.
 <br/>
-So after reading up a bit about the different solutions I settled for [CSS Modules](https://github.com/css-modules/css-modules) together with [SASS](http://sass-lang.com/) and here is how I set it up in my web application!
+So after reading up a bit about the different solutions I settled for [CSS Modules](https://github.com/css-modules/css-modules) together with [SASS](http://sass-lang.com/) and here is how I set it up in my web application.
 
 
 #### CSS Modules
@@ -17,9 +17,9 @@ So after reading up a bit about the different solutions I settled for [CSS Modul
 I am new to [CSS Modules](https://github.com/css-modules/css-modules) but I really like the idea behind it:
 > A CSS Module is a CSS file in which all class names and animation names are scoped locally by default.
 
-CSS classes are scoped globally by default so when your application grows it quickly becomes a nightmare to maintain and keep track of which classes is used where. With CSS modules (and the help of your building engine) you can import CSS files within a JavaScript file and classes will automatically be scoped locally to that file (if I am not clear you will see in the setup section what I mean).
+CSS classes are scoped globally by default so when your application grows it quickly becomes a nightmare to maintain and keep track of which classes is used where. With CSS modules (and the help of your building engine) you can import CSS files within a JavaScript file and CSS classes will automatically be scoped locally to that file (if I am not clear you will see in the setup section what I mean).
 <br/>
-In the context of React this means that you can easily scope a CSS file to a React component. This goes really well with React philosophy where "componentisation" and isolation is a big deal. By default with React we already define together both the structure (JSX) and logic (JavaScript) of a component so by using CSS Modules we are adding the style to the mix and completes the definition of the component. (I think that's really cool!)
+In the context of React this means that you can easily scope a CSS file to a React component. This goes really well with React philosophy where "componentisation" and isolation is a big deal. By default with React we already define together both the structure (JSX) and logic (JavaScript) of a component so by using CSS Modules we are adding the style to the mix and completes the definition of the component and I think that's really cool!
 
 
 Obviously we are very far from the popular paradigm where the visualisation and logic of a UI component are split but with React we are very far from that anyway so if you are using React you are very likely onboard with that approach :)
@@ -97,9 +97,9 @@ moduleNameMapper: {
     '\\.(css|scss)$': 'identity-obj-proxy'
 }
 ```
-Obviously this will fix running your tests not the tests themselves :)
+Obviously this will fix running your tests not the tests themselves!
 
 <br/>
 
 
-And that's it, I am all set for styling my websites. CSS Modules allows me to easily scope styles to a single component and SASS helps me to write nice maintainable CSS.
+And that's it, I am all set for styling my React application. CSS Modules allows me to easily scope styles to a single component and SASS helps me to write nice maintainable CSS.
