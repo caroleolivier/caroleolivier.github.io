@@ -17,9 +17,9 @@ So after reading up a bit about the different solutions I settled for [CSS Modul
 I am new to [CSS Modules](https://github.com/css-modules/css-modules) but I really like the idea behind it:
 > A CSS Module is a CSS file in which all class names and animation names are scoped locally by default.
 
-CSS classes are scoped globally by default so when your application grows it quickly becomes a nightmare to maintain and keep track of which classes is used where. With CSS modules (and the help of your building engine) you can import CSS files within a JavaScript file and CSS classes will automatically be scoped locally to that file (if I am not clear you will see in the setup section what I mean).
+CSS classes are scoped globally by default so when your application grows it quickly becomes a nightmare to maintain and keep track of which classes are used where. With CSS modules (and the help of the tool that builds your code) you can import CSS files within a JavaScript file and CSS classes will automatically be scoped locally to that file (if I am not clear you will see in the setup section what I mean).
 <br/>
-In the context of React this means that you can easily scope a CSS file to a React component. This goes really well with React philosophy where "componentisation" and isolation is a big deal. By default with React we already define together both the structure (JSX) and logic (JavaScript) of a component so by using CSS Modules we are adding the style to the mix and completes the definition of the component and I think that's really cool!
+In the context of React this means that you can easily scope a CSS file to a React component. This goes really well with React philosophy where "componentisation" and isolation is a big deal. By default with React we already define both the structure (JSX) and logic (JavaScript) of a component so, by using CSS Modules, we are adding the style to the mix which completes the definition of the component. I think that's really cool!
 
 
 Obviously we are very far from the popular paradigm where the visualisation and logic of a UI component are split but with React we are very far from that anyway so if you are using React you are very likely onboard with that approach :)
@@ -27,7 +27,7 @@ Obviously we are very far from the popular paradigm where the visualisation and 
 
 ##### CSS Modules Setup
 
-If you have followed my previous posts, you'll know that I am using [webpack]() as a bundler. It is super easy to configure CSS modules with webpack. All you have to do is install the webpack loader `css-loader` and its dependency `style-loader` with [npm]() and then add a new rule to webpack config for processing CSS files:
+If you have followed my previous posts, you'll know that I am using [webpack](https://webpack.js.org/) as a bundler. It is super easy to configure CSS modules with webpack. All you have to do is install the webpack loader `css-loader` and its dependency `style-loader` with [npm](https://www.npmjs.com/) and then add a new rule to webpack config for processing CSS files:
 
 ```
 // webpack.config.js
@@ -88,7 +88,7 @@ Be careful with the order of the loaders. The SASS loader should be last which m
 
 #### Jest and style sheets
 
-If you have read my [post](https://caroleolivier.github.io/blog/2017/09/26/testing-a-react-app) about testing a React application you may know that I am using [Jest](https://facebook.github.io/jest/) as test runner. If you want to import (S)CSS files into React components you need to make a couple of more changes else Jest can't even run your test anymore, it fails on the import of (S)CSS files.
+If you have read my [post](https://caroleolivier.github.io/blog/2017/09/26/testing-a-react-app) about testing a React application you may know that I am using [Jest](https://facebook.github.io/jest/) as test runner. If you want to import (S)CSS files into React components you need to make a couple of more changes or Jest can't even run your test anymore, it fails on the import of (S)CSS files.
 <br/>
 What you need to do is described on Jest's website [here](https://facebook.github.io/jest/docs/en/webpack.html#mocking-css-modules): add a dev npm dependency to `identity-obj-proxy` and configure Jest to use it:
 ```
