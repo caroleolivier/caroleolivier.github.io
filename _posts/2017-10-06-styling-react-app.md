@@ -102,4 +102,4 @@ Obviously this will fix running your tests not the tests themselves!
 <br/>
 
 
-And that's it, I am all set for styling my React application. CSS Modules allows me to easily scope styles to a single component and SASS helps me to write nice maintainable CSS.
+And that's it, I am all set for styling my React application. CSS Modules allows me to easily scope styles to a single component and SASS helps me to write nice maintainable CSS. If you want to see a simple example of how it works, you can check out the code [here](https://github.com/caroleolivier/minimal-react-starter/tree/v4.0.0).
