@@ -7,3 +7,4 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 sass:
     sass_dir: assets/sass
+google_analytics: UA-107919026-1
