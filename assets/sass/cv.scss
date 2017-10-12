@@ -13,6 +13,15 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
         font-size: 14px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
         .sidebar-wrapper {
             background: $cv_profile_background;
             position: absolute;
@@ -21,10 +30,6 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
             height: 100%;
             min-height: 800px;
             color: $sidebar_font_1;
-
-            a {
-                color: inherit;
-            }
 
             .unstyled-list {
                 list-style: none;
@@ -139,9 +144,11 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
             div {
                 line-height: 1.5;
             }
+
             a {
                 color: $font_color_2;
             }
+
             em {
                 font-style: inherit;
                 font-size: 14px;
