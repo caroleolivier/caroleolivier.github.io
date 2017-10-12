@@ -1,7 +1,7 @@
 $header_height: 50px;
 
 .website-header {
-    background-color: $header_background;
+    //background-color: $header_background;
     height: $header_height;
     line-height: $header_height;
 
@@ -23,8 +23,13 @@ $header_height: 50px;
             text-decoration: none;
             text-transform: uppercase;
             
-            &:hover {
-                background-color: lighten($header_background, 10%);
+            span {
+                &:hover {
+                    border-style: solid;
+                    border-color: $header_color;
+                    border-width: 0 0 2px 0;
+                    padding: 0 0 2px 0;
+                }
             }
         }
     }

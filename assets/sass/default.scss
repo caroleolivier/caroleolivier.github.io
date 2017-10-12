@@ -1,0 +1,23 @@
+$font_family: 'Roboto', sans-serif;
+
+html,body {
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+    background: $background;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: $font_family;
+    color: $font_color_1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.website-wrapper {
+    flex: 1 0 auto;
+}

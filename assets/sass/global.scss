@@ -1,13 +1,3 @@
-$font_family: 'Roboto', sans-serif;
-
-body {
-    margin: 0px;
-    background: $background;
-    font-family: $font_family;
-    color: $font_color_1;
-    -webkit-font-smoothing: antialiased;
-}
-
 .signature {
     font-family: 'Caveat', cursive;
     font-size: 26px;
@@ -26,4 +16,12 @@ body {
     .right-item {
         float: right;
     }
+}
+
+.horizontal-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 }

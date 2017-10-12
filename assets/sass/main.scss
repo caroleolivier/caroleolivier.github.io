@@ -2,9 +2,11 @@
 ---
 @import "color-scheme";
 @import "global";
-@import "website-container";
+@import "default";
+@import "website-content";
 @import "website-header";
 @import "website-footer";
 @import "home";
 @import "cv";
 @import "post";
+@import "custom-page";

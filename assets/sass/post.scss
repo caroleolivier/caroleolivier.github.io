@@ -1,21 +1,32 @@
 $post_background: white;
 
 .posts {
+    margin: 60px auto;
+    width: 70%;
+
+    h1 {
+        color: $font_color_7;
+    }
+
     table {
         padding: 0px 10px;
         
         td {
             padding: 3px 0px;
         }
+
         .date {
             width: 120px;
+            color: $font_color_6;
         }
+        
         .post-title {
             a {
                 text-decoration: none;
-                color: $font_color_2;
+                color: $font_color_7;
+
                 &:hover {
-                    color: $font_color_4;
+                    text-decoration: underline;
                 }
             }
         }
@@ -23,6 +34,8 @@ $post_background: white;
 }
 
 .post {
+    margin: 40px auto 60px auto;
+    width: 70%;
     padding: 20px 70px 70px 70px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     background: $post_background;
@@ -40,5 +53,14 @@ $post_background: white;
 
     .content {
         margin-top: 40px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $font_color_3;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }

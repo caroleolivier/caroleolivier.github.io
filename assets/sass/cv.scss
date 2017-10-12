@@ -4,11 +4,23 @@ $sidebar_font_1: white;
 $sidebar_font_2: lighten($cv_profile_background, 30%);
 
 .cv-wrapper {
+    margin: 40px auto 60px auto;
+    width: 70%;
+
     .cv-content {
         position: relative;
         background: $cv_background;
         font-size: 14px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
 
         .sidebar-wrapper {
             background: $cv_profile_background;
@@ -18,10 +30,6 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
             height: 100%;
             min-height: 800px;
             color: $sidebar_font_1;
-
-            a {
-                color: inherit;
-            }
 
             .unstyled-list {
                 list-style: none;
@@ -136,9 +144,11 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
             div {
                 line-height: 1.5;
             }
+
             a {
                 color: $font_color_2;
             }
+
             em {
                 font-style: inherit;
                 font-size: 14px;
@@ -199,9 +209,14 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
     .cv-footer {
         padding:20px;
         text-align: center;
+        color: $font_color_6;
 
         .fa-heart {
             color: #fb866a;
+        }
+
+        a {
+            color: inherit;
         }
     }
 }
