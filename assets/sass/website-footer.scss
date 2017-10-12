@@ -1,19 +1,29 @@
+$footer-height: 3em;
+
 .website-footer {
-    border-top: 1px solid #eaecef;
     font-size: 1.2em;
-    margin: 20px 50px;
+    background: $font_color_6;
+    height: $footer-height;
+
+    .container {
+        height: $footer-height;
+        line-height: $footer-height;
+    }
 
     ul {
         list-style: none;
+        margin: 0;
         
         li {
             display: inline;
+            line-height: inherit;
         }
     }
 
     .info {
         font-size: 14px;
         margin: 0px;
+        line-height: inherit;
     }
 
     .links {

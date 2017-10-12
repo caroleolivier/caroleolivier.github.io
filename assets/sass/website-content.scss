@@ -1,4 +1,4 @@
-.website-container {
+.website-content {
     margin: 60px auto;
     width: 70%;
     font-size: 17px;
@@ -39,7 +39,7 @@
 
     blockquote {
         border-left: solid 4px $font_color_4;
-        background: $background;
+        background: $font_color_6;
         font-style: italic;
 
         p {
@@ -48,11 +48,11 @@
     }
 
     code {
-        background: $background;
+        background: $font_color_6;
     }
 
     pre.highlight {
-        background: $background;
+        background: $font_color_6;
     }
 
     .fa {
