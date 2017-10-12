@@ -1,13 +1,14 @@
 $font_color_0: #0d262b;
 $font_color_1: #2a373a;
 $font_color_1_5: #284e6b;
-$font_color_2: #2d7788;
-$font_color_3: #42A8C0;
-$font_color_4: #67bace;
+$font_color_2: #1e7699;
+$font_color_3: #29a8d8;
+$font_color_4: #65cee6;
 $font_color_5: #97AAC3;
 $font_color_6: #fbfbfb;
+$font_color_7: white;
 
-$background: linear-gradient(to bottom, $font_color_2, $font_color_4);
+$background: linear-gradient(to bottom, $font_color_2 9%, $font_color_3 69%, $font_color_4 100%);
 
 $cv_profile_background: #ff506c;
 

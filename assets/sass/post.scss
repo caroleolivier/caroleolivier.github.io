@@ -1,6 +1,13 @@
 $post_background: white;
 
 .posts {
+    margin: 60px auto;
+    width: 70%;
+
+    h1 {
+        color: $font_color_7;
+    }
+
     table {
         padding: 0px 10px;
         
@@ -15,7 +22,7 @@ $post_background: white;
         .post-title {
             a {
                 text-decoration: none;
-                color: $font_color_2;
+                color: $font_color_7;
 
                 &:hover {
                     text-decoration: underline;
@@ -26,7 +33,7 @@ $post_background: white;
 }
 
 .post {
-    margin: 60px auto;
+    margin: 40px auto 60px auto;
     width: 70%;
     padding: 20px 70px 70px 70px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -45,5 +52,14 @@ $post_background: white;
 
     .content {
         margin-top: 40px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $font_color_3;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
