@@ -13,63 +13,11 @@
     </head>
     <body>
         <div class="website-wrapper">
-            <div class="website-header">
-                <div class="horizontal-stack">
-                        
-                    <div class="left-item">
-                        <!-- <div class="signature">
-                            CO
-                        </div> -->
-                    </div>
-                
-                    <div class="middle-item">
-                    </div>
+            {% include header.html %}
     
-                    <div class="right-item">
-                        <ul>
-                            <li><a href="/"><span>Home</span></a></li>
-                            <li><a href="/blog"><span>Blog</span></a></li>
-                            <li><a href="/cv"><span>CV</span></a></li>
-                            <li><a href="/about"><span>About</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="website-content">
-                {{ content }}
-            </div>
+            {% include content.html %}
         </div>
         
-        <footer class="website-footer">
-            <div class="horizontal-stack container">
-                <div class="left-item">
-                    <ul class="info">
-                        <li>
-                            © 2017
-                        </li>
-                    </ul>
-                </div>
-            
-                <div class="middle-item">
-                    <ul class="links">
-                        <li class="website">
-                            <a href="{{site.website}}" target="_blank"><i class="fa fa-globe"></i></a>
-                        </li>
-                        
-                        <li class="linkedin">
-                            <a href="{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                
-                        <li class="github">
-                            <a href="{{site.github}}" target="_blank"><i class="fa fa-github"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            
-                <div class="right-item">
-                </div>
-            </div>
-        </footer>
+        {% include footer.html %}
     </body>
 </html>

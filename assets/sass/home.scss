@@ -1,5 +1,28 @@
 .home {
+    margin: 60px auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+
+    .text {
+        width: 70%;
+        text-align: center;
+    }
+
+    .signature {
+        color: #fbacac;
+        font-weight: 700;
+    }
+
     h1 {
-        padding-bottom: 40px;
+        color: inherit;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: underline;
     }
 }

@@ -26,6 +26,8 @@ $post_background: white;
 }
 
 .post {
+    margin: 60px auto;
+    width: 70%;
     padding: 20px 70px 70px 70px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     background: $post_background;

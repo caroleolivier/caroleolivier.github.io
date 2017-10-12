@@ -4,6 +4,9 @@ $sidebar_font_1: white;
 $sidebar_font_2: lighten($cv_profile_background, 30%);
 
 .cv-wrapper {
+    margin: 60px auto;
+    width: 70%;
+    
     .cv-content {
         position: relative;
         background: $cv_background;
