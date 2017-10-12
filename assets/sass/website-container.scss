@@ -29,11 +29,11 @@
     }
 
     a {
-        text-decoration: underline;
+        text-decoration: none;
         color: $font_color_3;
         
         &:hover {
-            color: $font_color_4;
+            text-decoration: underline;
         }
     }
 

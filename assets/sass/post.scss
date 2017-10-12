@@ -7,15 +7,18 @@ $post_background: white;
         td {
             padding: 3px 0px;
         }
+
         .date {
             width: 120px;
         }
+        
         .post-title {
             a {
                 text-decoration: none;
                 color: $font_color_2;
+
                 &:hover {
-                    color: $font_color_4;
+                    text-decoration: underline;
                 }
             }
         }
