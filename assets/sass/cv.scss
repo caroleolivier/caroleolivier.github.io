@@ -209,9 +209,14 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
     .cv-footer {
         padding:20px;
         text-align: center;
+        color: $font_color_6;
 
         .fa-heart {
             color: #fb866a;
+        }
+
+        a {
+            color: inherit;
         }
     }
 }
