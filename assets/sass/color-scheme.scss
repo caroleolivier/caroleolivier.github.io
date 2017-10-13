@@ -8,15 +8,16 @@ $font_color_5: #97AAC3;
 $font_color_6: #fbfbfb;
 $font_color_7: white;
 
-//$background: linear-gradient(to bottom, $font_color_2 9%, $font_color_3 69%, $font_color_4 100%);
-$background: linear-gradient(to bottom, #001a21 9%, #01202b 69%, #003642 100%);
+//$background: linear-gradient(to bottom, #001a21 9%, #01202b 69%, #003642 100%);
+//$background: linear-gradient(to bottom, #005167 9%, #00668a 69%, #006d86 100%);
+//$background: linear-gradient(to bottom, #1e7099 9%, #2997d8 69%, #65c2e6 100%);
+$background: $font_color_6;
 
 $cv_profile_background: #ff506c;
 
 $signature_color: #ff506c;
 
-$header_background: $font_color_1;
-$header_color: white;
+$header_color: #40494c;
 
 $icon_color_1: #f9bc28;
 $icon_color_2: #ffe095;
