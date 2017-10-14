@@ -1,11 +1,16 @@
 $cv_background: white;
+$cv_font_1: #2a373a;
+$cv_font_2: #1f79c3;
 
-$sidebar_font_1: white;
-$sidebar_font_2: lighten($cv_profile_background, 30%);
+$sidebar_background:#ffc526;
+$cv_sidebar_font_1: white;
+$cv_sidebar_font_2: white;
+
 
 .cv-wrapper {
     margin: 40px auto 60px auto;
     width: 70%;
+    color: $cv_font_1;
 
     .cv-content {
         position: relative;
@@ -23,13 +28,13 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
         }
 
         .sidebar-wrapper {
-            background: $cv_profile_background;
+            background: $sidebar_background;
             position: absolute;
             right: 0;
             width: 240px;
             height: 100%;
             min-height: 800px;
-            color: $sidebar_font_1;
+            color: $cv_sidebar_font_1;
 
             .unstyled-list {
                 list-style: none;
@@ -47,7 +52,6 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
                     margin-right: 5px;
                     font-size: 18px;
                     vertical-align: middle;
-                    color: $sidebar_font_1;
                 }
             }
 
@@ -81,18 +85,13 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
             .profile-container {
                 background: rgba(0, 0, 0, 0.2);
                 text-align: center;
-                color: #fff;
                 padding: 20px;
 
                 .profile-img {
                     max-width: 100px;
                     margin-bottom: 15px;
-                    border-radius: 100%;
-                    border: 0px solid #fff;
-                    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
                 }
                 .name {
-                    color: inherit;
                     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
                     font-size: 32px;
                     font-weight: 900;
@@ -100,7 +99,6 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
                     margin-bottom: 10px;
                 }
                 .tagline {
-                    color: $sidebar_font_2;
                     font-size: 16px;
                     font-weight: 400;
                     margin-top: 0;
@@ -117,13 +115,13 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
                     margin-bottom: 3px;
                 }
                 .meta {
-                    color: $sidebar_font_2;
+                    color: $cv_sidebar_font_2;
                     font-weight: 500;
                     margin-bottom: 4px;
                     margin-top: 0;
                 }
                 .time {
-                    color: $sidebar_font_2;
+                    color: $cv_sidebar_font_2;
                     font-weight: 500;
                     margin-bottom: 0px;
                 }
@@ -131,7 +129,7 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
 
             .language-container {
                 .lang-desc {
-                    color: $sidebar_font_2;
+                    color: $cv_sidebar_font_2;
                 }
             }
         }
@@ -146,20 +144,20 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
             }
 
             a {
-                color: $font_color_2;
+                color: $cv_font_2;
             }
 
             em {
                 font-style: inherit;
                 font-size: 14px;
-                color: $font_color_5;
+                color: $cv_font_2;
                 position: absolute;
                 right: 290px;
                 font-weight: 100;
             }
             
             .fa {
-                color: $font_color_2;
+                color: $cv_font_2;
             }
 
             .section {
@@ -169,7 +167,7 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
                     text-transform: uppercase;
                     font-size: 20px;
                     font-weight: 600;
-                    color: $font_color_2;
+                    color: $cv_font_2;
 
                     .fa {
                         margin-right: 8px;
@@ -209,7 +207,7 @@ $sidebar_font_2: lighten($cv_profile_background, 30%);
     .cv-footer {
         padding:20px;
         text-align: center;
-        color: $font_color_6;
+        color: white;
 
         .fa-heart {
             color: #fb866a;
