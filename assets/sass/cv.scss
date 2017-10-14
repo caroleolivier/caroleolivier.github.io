@@ -1,8 +1,8 @@
 $cv_background: white;
-$cv_font_1: black;
+$cv_font_1: #2a373a;
 $cv_font_2: #1f79c3;
 
-$sidebard_background:#ffc526;
+$sidebar_background:#ffc526;
 $cv_sidebar_font_1: white;
 $cv_sidebar_font_2: white;
 
@@ -10,6 +10,7 @@ $cv_sidebar_font_2: white;
 .cv-wrapper {
     margin: 40px auto 60px auto;
     width: 70%;
+    color: $cv_font_1;
 
     .cv-content {
         position: relative;
@@ -206,7 +207,7 @@ $cv_sidebar_font_2: white;
     .cv-footer {
         padding:20px;
         text-align: center;
-        color: $font_color_6;
+        color: white;
 
         .fa-heart {
             color: #fb866a;
