@@ -17,7 +17,7 @@ First of all, what does `routing` mean?
 > Routing is the process of selecting a path for traffic in a network, or between or across multiple networks.
 > <br/> [Wikipedia](https://en.wikipedia.org/wiki/Routing)
 
-And in the context of routing pages in the browser routing it means: given url `load/my/page` then load the correct page.
+Concretely it means: given url `load/my/page` then it is resolved and the correct page is loaded.
 
 
 There are two types of web page routing: **client-side** and **server-side**. Server-side routing is (in my head) the original routing, i.e. you enter a URL, it hits a web server, the web server resolves the URL path and then it serves you the page at that path. Client-side routing is done *within* the browser by a JavaScript library (I have no idea if it can be done differently).
