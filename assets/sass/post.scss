@@ -1,13 +1,13 @@
+$post_color_1: #1a68a9;
+$post_color_3: #1f79c3;
+$post_color_4: #50aefd;
+$post_color_6: #97AAC3;
+$post_color_7: #fbfbfb;
+$post_color_20: #ffc526;
+
 $post_background: white;
-$font_color_0: #0d262b;
-$font_color_1: #2a373a;
-$font_color_1_5: #284e6b;
-$font_color_2: #1e7699;
-$font_color_3: #29a8d8;
-$font_color_4: #65cee6;
-$font_color_5: #97AAC3;
-$font_color_6: #fbfbfb;
-$font_color_7: white;
+$post_title: $post_color_1;;
+$post_subtitle: $post_color_6;;
 
 .post-page {
     margin: 40px auto 60px auto;
@@ -20,12 +20,12 @@ $font_color_7: white;
         .title {
             margin-bottom: 10px;
             font-size: 3em;
-            color: #2a373a;
+            color: $post_title;
             line-height: 0.9em;
         }
     
         .meta {
-            color: $font_color_5;
+            color: $post_subtitle;
             margin: 20px 0px;
         }
     }
@@ -37,19 +37,22 @@ $font_color_7: white;
 
         h1 {
             font-size: 3em;
-            color: $font_color_1;
+            color: $post_color_1;
             line-height: 0.9em;
         }
 
         h2 {
+            color: $post_color_3;
             font-size: 2.5em;
         }
 
         h3 {
+            color: $post_color_3;
             font-size: 2em;
         }
 
         h4 {
+            color: $post_color_3;
             font-size: 1.5em;
         }
 
@@ -60,8 +63,8 @@ $font_color_7: white;
         }
 
         blockquote {
-            border-left: solid 4px $font_color_4;
-            background: $font_color_6;
+            border-left: solid 4px $post_color_20;
+            background: $post_color_7;
             font-style: italic;
 
             p {
@@ -70,16 +73,16 @@ $font_color_7: white;
         }
 
         code {
-            background: $font_color_6;
+            background: $post_color_7;
         }
 
         pre.highlight {
-            background: $font_color_6;
+            background: $post_color_7;
         }
         
         a {
             text-decoration: none;
-            color: $font_color_3;
+            color: $post_color_4;
     
             &:hover {
                 text-decoration: underline;
