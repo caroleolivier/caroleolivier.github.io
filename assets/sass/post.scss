@@ -1,66 +1,92 @@
+$post_color_1: #1a68a9;
+$post_color_3: #1f79c3;
+$post_color_4: #50aefd;
+$post_color_6: #97AAC3;
+$post_color_7: #fbfbfb;
+$post_color_20: #ffc526;
+
 $post_background: white;
+$post_title: $post_color_1;;
+$post_subtitle: $post_color_6;;
 
-.posts {
-    margin: 60px auto;
-    width: 70%;
-
-    h1 {
-        color: $font_color_7;
-    }
-
-    table {
-        padding: 0px 10px;
-        
-        td {
-            padding: 3px 0px;
-        }
-
-        .date {
-            width: 120px;
-            color: $font_color_6;
-        }
-        
-        .post-title {
-            a {
-                text-decoration: none;
-                color: $font_color_7;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
-
-.post {
+.post-page {
     margin: 40px auto 60px auto;
     width: 70%;
     padding: 20px 70px 70px 70px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     background: $post_background;
 
-    .header {
-        h1 {
+    .post-header {
+        .title {
             margin-bottom: 10px;
+            font-size: 3em;
+            color: $post_title;
+            line-height: 0.9em;
         }
     
         .meta {
-            color: $font_color_5;
+            color: $post_subtitle;
             margin: 20px 0px;
         }
     }
 
-    .content {
+    .post-content {
         margin-top: 40px;
-    }
+        font-size: 17px;
+        line-height: 1.5em;
 
-    a {
-        text-decoration: none;
-        color: $font_color_3;
+        h1 {
+            font-size: 3em;
+            color: $post_color_1;
+            line-height: 0.9em;
+        }
 
-        &:hover {
-            text-decoration: underline;
+        h2 {
+            color: $post_color_3;
+            font-size: 2.5em;
+        }
+
+        h3 {
+            color: $post_color_3;
+            font-size: 2em;
+        }
+
+        h4 {
+            color: $post_color_3;
+            font-size: 1.5em;
+        }
+
+        h5 {
+            font-size: 1.3em;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            border-left: solid 4px $post_color_20;
+            background: $post_color_7;
+            font-style: italic;
+
+            p {
+                margin-left: 10px;
+            }
+        }
+
+        code {
+            background: $post_color_7;
+        }
+
+        pre.highlight {
+            background: $post_color_7;
+        }
+        
+        a {
+            text-decoration: none;
+            color: $post_color_4;
+    
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }

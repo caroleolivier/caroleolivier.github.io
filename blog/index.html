@@ -3,13 +3,15 @@ layout: default
 title: Carole's posts
 ---
 <div class="posts">
-    <h1>Blog Posts</h1>
-    <table>
-        {% for post in site.posts %}
-        <tr>
-            <td class="date">{{ post.date | date_to_string }}</td>
-            <td class="post-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></td>
-        </tr>
-        {% endfor %}
-    </table>
+    <img src="../assets/images/london-eye.svg" alt="London Eye" class="london-eye">
+    <div class="post-list">
+        <table>
+            {% for post in site.posts %}
+            <tr>
+                <td class="date">{{ post.date | date_to_string }}</td>
+                <td class="post-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
 </div>
