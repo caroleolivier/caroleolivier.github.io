@@ -12,12 +12,13 @@
         {% endif %}
     </head>
     <body>
-        <div class="website-wrapper">
+        <div class="app">
             {% include header.html %}
-    
-            {% include content.html %}
+            
+            {{ content }}
+
+            {% include footer.html %}
         </div>
-        
-        {% include footer.html %}
     </body>
 </html>
+

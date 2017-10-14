@@ -1,19 +1,11 @@
-$header_height: 50px;
-
 .website-header {
-    height: $header_height;
-    line-height: $header_height;
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-    }
-    
-    li {
-        float: left;
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em 0em;
 
         a {
-            color: $header_color;
+            color: white;
             font-weight: 600;
             display: block;
             padding: 0px 16px;
@@ -25,7 +17,7 @@ $header_height: 50px;
             span {
                 &:hover {
                     border-style: solid;
-                    border-color: $header_color;
+                    border-color: white;
                     border-width: 0 0 2px 0;
                     padding: 0 0 2px 0;
                 }

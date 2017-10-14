@@ -1,48 +1,18 @@
 $post_background: white;
 
-.posts {
-    margin: 60px auto;
-    width: 70%;
-
-    h1 {
-        color: $font_color_7;
-    }
-
-    table {
-        padding: 0px 10px;
-        
-        td {
-            padding: 3px 0px;
-        }
-
-        .date {
-            width: 120px;
-            color: $font_color_6;
-        }
-        
-        .post-title {
-            a {
-                text-decoration: none;
-                color: $font_color_7;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
-
-.post {
+.post-page {
     margin: 40px auto 60px auto;
     width: 70%;
     padding: 20px 70px 70px 70px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     background: $post_background;
 
-    .header {
-        h1 {
+    .post-header {
+        .title {
             margin-bottom: 10px;
+            font-size: 3em;
+            color: #2a373a;
+            line-height: 0.9em;
         }
     
         .meta {
@@ -51,16 +21,60 @@ $post_background: white;
         }
     }
 
-    .content {
+    .post-content {
         margin-top: 40px;
-    }
+        font-size: 17px;
+        line-height: 1.5em;
 
-    a {
-        text-decoration: none;
-        color: $font_color_3;
+        h1 {
+            font-size: 3em;
+            color: $font_color_1;
+            line-height: 0.9em;
+        }
 
-        &:hover {
-            text-decoration: underline;
+        h2 {
+            font-size: 2.5em;
+        }
+
+        h3 {
+            font-size: 2em;
+        }
+
+        h4 {
+            font-size: 1.5em;
+        }
+
+        h5 {
+            font-size: 1.3em;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        blockquote {
+            border-left: solid 4px $font_color_4;
+            background: $font_color_6;
+            font-style: italic;
+
+            p {
+                margin-left: 10px;
+            }
+        }
+
+        code {
+            background: $font_color_6;
+        }
+
+        pre.highlight {
+            background: $font_color_6;
+        }
+        
+        a {
+            text-decoration: none;
+            color: $font_color_3;
+    
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
