@@ -27,7 +27,13 @@ Although the two solutions are the same from a user perspective, i.e. entering a
 
 #### Client-side routing in React
 
-My website is super simple so I could have gone away with using server side routing. It is not a super heavy and complicated SPA (Single Page Application). However, I was curious to learn how to use client-side routing with React. After all React is used to build SPA and client-side routing is a big part of SPA else you may as well build a static website.
+Client-side routing is used heavily in [SPA](https://en.wikipedia.org/wiki/Single-page_application) (Single Page Application) which are very popular applications these days. As Wikipedia puts it:
+
+> A single-page application (SPA) is a web application or web site that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server
+> <br/>[Wikipedia](https://en.wikipedia.org/wiki/Single-page_application)
+
+One possible action that may require re-rendering of the page is changing (manually or not) the URL. So I was curious to learn how it fitted together with React, i.e. where/how to implement it.
+
 
 ##### React Router
 
