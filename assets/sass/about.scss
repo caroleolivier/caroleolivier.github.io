@@ -1,46 +1,27 @@
 $about-icon-height: 5em;
 
 .about {
-    height: 100%;
     width: 100%;
     padding: 0.5em 0;
 
-    display: flex;
-    flex-direction: column;
-
     .presentation {
-        height: 45%;
-        background: linear-gradient(to bottom, #5b8bb7 9%, #73b0e8 40%, #a8d5ff 100%);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-
+        height: 35em;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        padding: 0 10em;
 
-        > div {
-            width: 30em;
-        }
-
-        .england {
-            padding: 0 3em;
-
-            .wrapper {
-                width: 25em;
-                float: right;
-
-                > img {
-                    height: $about-icon-height;
-                    padding: 0.6em 3em;
-                }
-
-            }
+        .farm {
+            width: 18em;
+            padding: 0 10em;
         }
 
         .text {
+            width: 50em;
             padding: 0 0 0 3em;
-            color: white;
+            line-height: 1.5em;
+            color: #ffe594;
 
             >p {
                 margin: 0;
@@ -57,11 +38,14 @@ $about-icon-height: 5em;
     }
 
     .description {
-        height: 55%;
-        background: #6d6d6d;
-        color: white;
+        height: 20em;
+        background:#e8e8e8;
+        color: #585858;
+        padding: 2em 0;
+        margin-bottom: 1em;
 
         .intro {
+            padding: 0 0 2em 0;
             > h2 {
                 text-align: center;
             }
