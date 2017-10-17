@@ -1,0 +1,89 @@
+$about-icon-height: 5em;
+
+.about {
+    width: 100%;
+    padding: 0.5em 0;
+
+    .presentation {
+        height: 35em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10em;
+
+        .farm {
+            width: 18em;
+            padding: 0 10em;
+        }
+
+        .text {
+            width: 50em;
+            padding: 0 0 0 3em;
+            line-height: 1.5em;
+            color: #ffe594;
+
+            >p {
+                margin: 0;
+                font-size: 1.1em;
+                
+                &.hi {
+                    margin: 0 0 1em 0;
+                }
+    
+                &.thanks {
+                    margin: 1em 0 0 0;
+                }
+            }
+        }
+    }
+
+    .description {
+        height: 20em;
+        background:white;
+        color: #585858;
+        padding: 2em 0;
+        margin-bottom: 1em;
+
+        .intro {
+            padding: 0 0 2em 0;
+            > h2 {
+                text-align: center;
+            }
+        }
+
+        .me-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 1em 0 1.5em 0;
+
+            .me-container-item {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+
+                >img {
+                    height: $about-icon-height*0.9;
+                }
+
+                .item {
+                    padding: 1em 0 0 0;
+                    text-align: center;
+
+                    .title {
+                        font-style: italic;
+                        color: #b1afaf;
+                        margin: 0.5em 0 0.9em 0;
+                    }
+
+                    > p {
+                        margin: 0.5em 0;
+                    }
+                }
+            }
+        }
+    }
+}
