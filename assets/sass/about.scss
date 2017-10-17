@@ -25,6 +25,7 @@ $about-icon-height: 5em;
 
             >p {
                 margin: 0;
+                font-size: 1.1em;
                 
                 &.hi {
                     margin: 0 0 1em 0;
@@ -71,6 +72,16 @@ $about-icon-height: 5em;
                 .item {
                     padding: 1em 0 0 0;
                     text-align: center;
+
+                    .title {
+                        font-style: italic;
+                        color: #b1afaf;
+                        margin: 0.5em 0 0.9em 0;
+                    }
+
+                    > p {
+                        margin: 0.5em 0;
+                    }
                 }
             }
         }
