@@ -5,13 +5,15 @@ date: 2017-10-28
 ---
 
 I recently had to consume a SOAP based web service from within JavaScript code. To solve that problem I decided to write a separate service acting as a SOAP to JSON converter. In this post I explain why and how I did it.
+<br/>
+If you are interested in the code you take a look to my GitHub repository at that [commit](https://github.com/caroleolivier/commute-status/tree/0b93d6b4e59c7183201f4a5a4cb5dade5fae73d7).
 
 #### The problem
 
-I am currently writing a web application to display train data and one of the data source I am using is a SOAP based web service. SOAP stands for Simple Object Access Protocol, it is a protocol to exchange data over [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) using [XML](https://en.wikipedia.org/wiki/XML) as message format.
-SOAP can be very powerful but is not as easy to use out of the box as is JSON using JavaScript.
+I am currently writing a web application to display train time data and one of the data source I am using is a SOAP based web service. SOAP stands for Simple Object Access Protocol, it is a protocol to exchange data over [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) using [XML](https://en.wikipedia.org/wiki/XML) as message format.
+SOAP can be very powerful but is not as straightforward to use as is a JSON REST API, especially using JavaScript.
 <br/>
-Here is a good example from [Wikipedia](https://en.wikipedia.org/wiki/SOAP#Example_message_.28encapsulated_in_HTTP.29):
+Here is a good message example from [Wikipedia](https://en.wikipedia.org/wiki/SOAP#Example_message_.28encapsulated_in_HTTP.29):
 
 ```xml
     POST /InStock HTTP/1.1
@@ -31,13 +33,13 @@ Here is a good example from [Wikipedia](https://en.wikipedia.org/wiki/SOAP#Examp
     </soap:Body>
     </soap:Envelope>
 ```
-As you can imagine parsing the message with bare JavaScript wouldn't be very fun.
+As you can imagine, parsing the message with bare JavaScript wouldn't be very fun.
 
 However, one of the great thing with SOAP based web service is that they often (they should really) come with a WSDL contract.
 > An WSDL document describes a web service. It specifies the location of the service, and the methods of the service
 > [WSDL](https://www.w3schools.com/xml/xml_wsdl.asp) 
 
-[This](https://lite.realtime.nationalrail.co.uk/OpenLDBWS/rtti_2017-02-02_ldb.wsdl) is for instance the WSDL document that comes with the SOAP web service I used in my project. You wouldn't want a human being reading it but IDEs such as Visual Studio (for instance see [here](https://msdn.microsoft.com/en-us/library/ff512390.aspx)) can easily process such contract and automatically create interface and classes to consume the service. It is super powerful and makes using SOAP service very easy.
+[This](https://lite.realtime.nationalrail.co.uk/OpenLDBWS/rtti_2017-02-02_ldb.wsdl) is for instance the WSDL document that comes with the SOAP web service I used in my project. You wouldn't want a human being reading it but IDEs such as Visual Studio (for instance, see [here](https://msdn.microsoft.com/en-us/library/ff512390.aspx)) can easily process such contract and automatically create interface and classes to consume the service. It is super powerful and makes using SOAP service very easy.
 
 Knowing that, I could still have decided to call the service using JavaScript. There are libraries that help with reading SOAP based message and tools that help with reading WSDL. However, a couple of reasons made me pick another solution.
 <br/>
@@ -48,7 +50,7 @@ So I settled for [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) u
 
 #### In practice
 
-In practice it took a little while to get everything up and running as I had to install a bunch of libraries and softwares. However, this is a one-time step so I think it is worth it.
+In practice it took a little while to get everything up and running as I had to install a bunch of libraries and software. However, this is a one-time step so I think it is worth it.
 
 I installed the following tools:
 
