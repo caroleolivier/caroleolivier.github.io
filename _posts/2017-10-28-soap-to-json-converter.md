@@ -6,7 +6,7 @@ date: 2017-10-28
 
 I recently had to consume a SOAP based web service from within JavaScript code. To solve that problem I decided to write a separate service acting as a SOAP to JSON converter. In this post I explain why and how I did it.
 <br/>
-If you are interested in the code you take a look to my GitHub repository at that [commit](https://github.com/caroleolivier/commute-status/tree/0b93d6b4e59c7183201f4a5a4cb5dade5fae73d7).
+You can take a look in my Github repository at this [commit](https://github.com/caroleolivier/commute-status/tree/0b93d6b4e59c7183201f4a5a4cb5dade5fae73d7).
 
 #### The problem
 
