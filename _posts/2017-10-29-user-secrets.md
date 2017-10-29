@@ -4,17 +4,17 @@ title: Safe storage of app secrets during development in ASP.NET Core
 time: 2017-10-29
 ---
 
-The title of this article is a direct copy of [this](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?tabs=visual-studio) great article on Microsoft's website. The reason I am writing this post is merely because one should know the options when developping and running [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) application locally and does not want to commit password, API key, etc... basically any secrets information that should not be publicly available. So I am hoping to contribute to spreading the words with that post :)
+The title of this article is a direct copy of [this](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?tabs=visual-studio) great article on Microsoft's website. The reason I am writing this post is because one should know the options when developping and running [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) application locally and does not want to commit sensitive data like password, API key, etc... So I am hoping to contribute to spreading the words with that post :)
 
-I highly recommend reading Microsoft article, it is very informative but as an example I will show here how I used Secret Manager to develop and run my service locally without having to commit sensitive data.
+I highly recommend reading Microsoft's article, it is very informative, but if you want to see how I used Secret Manager in practice then please read on!
 
 ##### Secret Manager
 
-The idea behind Secret Manager is to store locally sensitive data and use them when developping and running applications locally. Bear in mind that the data is not encrypted, it is just saved in clear in a file locally.
+The idea behind Secret Manager is to store sensitive data locally and use them when developping and running applications locally. Bear in mind that the data is not encrypted, it is just saved in clear in a file locally.
 
 ##### Reference the Secret Manager tool to your ASP.NET Core project
 
-First, add the Secret Manager tool, which means add a reference inside the project file (i.e. the .csproj file of the project you wish to use sensitive data in):
+First, add the Secret Manager tool, i.e. add a reference inside the project file (i.e. the .csproj file of the project you wish to use sensitive data in):
 ```xml
 <ItemGroup>
     ...
@@ -86,4 +86,4 @@ The Configuration object can be used directly but a more elegant way to access c
 
 <br/>
 
-So User Secrets are very useful when developping ASP.NET Core applications locally. I am very new to it to be honest and there might be other (maybe better) ways of achieving this but I like it for now. There is only one thing that bothers me, it is the extra if statement in code to do extra operations when running locally. I don't like it very much, I prefer when the code path remains the same no matter what environments the code is running in. However, that will do for now!
+So Secret Manager is very useful when developping ASP.NET Core applications locally. There are other ways of achieving the same things (like using environment variables) but I like this solution, it was very straighforward to configure. There is only one thing that bothers me: the extra `if` statement in code to execute extra operations in development. I don't like it very much, I prefer when the code path remains the same no matter what environments the code is running in. However, that will do for now!
