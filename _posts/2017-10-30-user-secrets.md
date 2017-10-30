@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Safe storage of app secrets during development in ASP.NET Core
-time: 2017-10-29
+time: 2017-10-30
 ---
 
 The title of this article is a direct copy of [this](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?tabs=visual-studio) great article on Microsoft's website. The reason I am writing this post is because one should know the options when developping and running [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) application locally and does not want to commit sensitive data like password, API key, etc... So I am hoping to contribute to spreading the words with that post :)
