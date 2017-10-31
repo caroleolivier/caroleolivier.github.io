@@ -57,15 +57,13 @@ With that in place, the user secret can now be used in code.
 
 ##### Add the User Secret to the Configuration at run time
 
-Ultimately, when my application is deployed, the sensitive data will be injected via the configuration at start time. So what I want is to be able to add the User Secrets to the configuration at start time but only in development mode. The way (or at least one way) to do it to add the user secret to the C# Configuration object when it is built:
+Secret Manager is great for using locally. I guess it could still be used if the application is deployed on a server and it might even be possible to use it inside a container but it definitely isn't meant to be used in production. I haven't decided where and how my application will be deployed yet, however I know that ultimately I want the sensitive data to be injected and consumed as configuration. Luckily, ASP.NET Core comes with many handy methods to achieve this. In the case of user secrets, the way to do it is the following:
 ```
 public class Startup
 {
     public Startup(IHostingEnvironment env)
     {
-        var builder = new ConfigurationBuilder()
-            .SetBasePath(env.ContentRootPath)
-            .AddJsonFile("appsettings.json");
+        var builder = new ConfigurationBuilder();
 
         if (env.IsDevelopment())
         {
@@ -75,7 +73,17 @@ public class Startup
         Configuration = builder.Build();
     }
 ```
-An interesting thing to note here is that one can mix configuration sources. In my case, my application configuration comes from two sources: one is the appsettings.json file stored with my code; the other is the data stored in the user secrets. This is super useful!
+As an illustrative example, it is possible to do the following:
+```
+    var builder = new ConfigurationBuilder();
+        .SetBasePath(env.ContentRootPath)
+        .AddJsonFile("appsettings.json")
+        .AddEnvironmentVariables()
+        .AddUserSecrets();
+
+```
+
+As you can see it is very easy to mix configuration sources, this is super useful!
 
 Once the configuration object is built, it doesn't matter where the data came from, you can access it as usual by calling `Configuration.GetSection("SecretServiceConfig")`. This will return a ConfigurationSection object with all the data.
 
@@ -86,4 +94,4 @@ The Configuration object can be used directly but a more elegant way to access c
 
 <br/>
 
-So Secret Manager is very useful when developping ASP.NET Core applications locally. There are other ways of achieving the same things (like using environment variables) but I like this solution as it is very straighforward to configure. There is only one thing that bothers me: the extra `if` statement in code to execute extra operations in development. I don't like it very much, I prefer when the code path remains the same no matter what environments the code is running in. However, that will do for now!
+So Secret Manager is very useful when developping ASP.NET Core applications locally. There are other ways of achieving the same things (like using environment variables) but I like this solution as it is very straighforward to configure. There is only one thing that bothers me: the code path executed in production versus development is different. I don't like it very much. However, I am not there yet so that will do for now!
