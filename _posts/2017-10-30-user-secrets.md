@@ -4,13 +4,13 @@ title: Safe storage of app secrets during development in ASP.NET Core
 time: 2017-10-30
 ---
 
-The title of this article is a direct copy of [this](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?tabs=visual-studio) great article on Microsoft's website. The reason I am writing this post is because one should know the options when developping and running [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) application locally and does not want to commit sensitive data like password, API key, etc... So I am hoping to contribute to spreading the words with that post :)
+The title of this article is a direct copy of [this](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?tabs=visual-studio) great article on Microsoft's website. The reason I am writing this post is because one should know the options that permit you to develop [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) applications locally without risking committing sensitive data like passwords, API keys etc... So I am hoping to contribute to spreading the words with this post :)
 
 I highly recommend reading Microsoft's article, it is very informative, but if you want to see how I used Secret Manager in practice then please read on!
 
 ##### Secret Manager
 
-The idea behind Secret Manager is to store sensitive data locally and use them when developping and running applications locally. Bear in mind that the data is not encrypted, it is just saved in clear in a file locally.
+The idea behind Secret Manager is to store sensitive data locally and use them when developping and running applications locally. Bear in mind that the data is not encrypted, it is just saved in plaintext in a file locally.
 
 ##### Reference the Secret Manager tool to your ASP.NET Core project
 
@@ -57,7 +57,7 @@ With that in place, the user secret can now be used in code.
 
 ##### Add the User Secret to the Configuration at run time
 
-Ultimately, when my application will be deployed, the sensitive data will be injected via the configuration at start time. So what I want is to be able to add the User Secrets to the configuration at start time but only in development mode. The way (or at least one way) to do it to add the user secret to the C# Configuration object when it is built:
+Ultimately, when my application is deployed, the sensitive data will be injected via the configuration at start time. So what I want is to be able to add the User Secrets to the configuration at start time but only in development mode. The way (or at least one way) to do it to add the user secret to the C# Configuration object when it is built:
 ```
 public class Startup
 {
@@ -82,7 +82,7 @@ Once the configuration object is built, it doesn't matter where the data came fr
 
 ##### Using Option to access Configuration
 
-The Configuration object can be used directly but a more elegant way to access configuration is using what Microsoft calls the option pattern. It basically helps match configuration section to C# classes. I won't describe how I used it in this post as it is out of scope but it is worth knowing about it, you can check out this [article](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration?tabs=basicconfiguration) about Configuration, they mention it.
+The Configuration object can be used directly but a more elegant way to access configuration is using what Microsoft calls the option pattern. It basically helps match configuration sections to C# classes. I won't describe how I used it in this post as it is out of scope but it is worth knowing about it, you can check out this [article](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration?tabs=basicconfiguration) about Configuration, they mention it.
 
 <br/>
 
