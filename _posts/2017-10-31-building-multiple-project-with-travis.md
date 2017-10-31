@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building multiple projects inside the same GitHub repostiory with Travis
+title: Building multiple projects with Travis
 date: 2017-10-31
 ---
 
