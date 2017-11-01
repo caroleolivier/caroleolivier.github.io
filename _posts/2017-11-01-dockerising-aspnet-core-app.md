@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dockerising an ASP.NET Core application
-date: 2017-10-31
+date: 2017-11-01
 ---
 
 
