@@ -4,11 +4,11 @@ title: Docker Containerisation with Travis
 date: 2017-11-02
 ---
 
-Yesterday, I described [here](ZZZ) how to package an [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) application into a Docker container. Today I am showing how I integrated it to my Continous Integration workflow with [Travis](https://travis-ci.org/).
+Yesterday, I described [here](ZZZ) how to package an [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) application into a [Docker](https://www.docker.com/) container. Today, I will show how I integrated it to my Continous Integration workflow with [Travis](https://travis-ci.org/).
 
 ##### Building Docker images
 
-Travis supports [Docker](https://www.docker.com/) so it is very straightforward to build a Docker image with it. All you need to do is add Docker as a service dependency and add the Docker build command to the script section.
+[Travis supports Docker](https://docs.travis-ci.com/user/docker/) so it is very straightforward to build a Docker image with it. All you need to do is add Docker as a service dependency and add the Docker build command to the script section.
 
 ```
 - language: csharp
@@ -79,4 +79,4 @@ And this is my final Travis configuration (or similar):
     - docker push $DOCKER_USER/repositoryName:$TRAVIS_COMMIT_NUMBER
 ```
 
-So now, every time I edit my code, Travis picks up the changes, builds the code, creates a Docker image and then publishes to Docker Hub. Next step is to deploy my Docker image.
+So now, every time I push new code to my GitHub repository, Travis picks up the changes, builds the code, creates a Docker image and then publishes it to Docker Hub. This is really great but the last bit is missing: the deployment. This is what I will be looking at next.
