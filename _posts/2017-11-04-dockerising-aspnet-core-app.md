@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Dockerising an ASP.NET Core application
-date: 2017-10-31
+date: 2017-11-04
 ---
 
 
-A few days ago I started looking at ways to deploy my [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) application. I looked at [Cloud](https://en.wikipedia.org/wiki/Cloud_computing) solutions but ended up deciding to first focus on containerising my application and only later to look at deployment solutions. In this post I am explaining the rational behind my decision and how I containerised my application.
+A few days ago I started looking at ways to deploy my [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) application. I looked at [Cloud](https://en.wikipedia.org/wiki/Cloud_computing) solutions but ended up deciding to first focus on containerising my application and only later to look at deployment solutions. In this post I will explain the rationale behind my decision and how I containerised my application.
 
 
 #### ASP.NET Core deployment to the Cloud
@@ -16,7 +16,7 @@ These are all fine solutions, however, there is too much magic going on to my ta
 <br/>
 I am sure there are answers somewhere but I couldn't find them so I moved on.
 
-I briefly did a search around [Google Cloud](https://cloud.google.com) and ASP.NET Core and found this good [tutorial](https://codelabs.developers.google.com/codelabs/cloud-app-engine-aspnetcore/#0). I felt like I understood a bit more about what was going on, however, although they mention packaging the app as Docker container at the start, I didn't see it happening anywhere. It looks like the .NET binaries are built and then deployed somewhere where the .NET runtime is installed. It works but I didn't like the idea to delegate control over the environment my application was running in.
+I briefly did a search around [Google Cloud](https://cloud.google.com) and ASP.NET Core and found this good [tutorial](https://codelabs.developers.google.com/codelabs/cloud-app-engine-aspnetcore/#0). I felt like I understood a bit more about what was going on, however, although they mention packaging the app as Docker container at the start, I didn't see it happening anywhere. It looks like the .NET binaries are built and then deployed somewhere where the .NET runtime is installed. It works but I didn't like the idea of delegating control over the environment my application was running in.
 
 And so this is when I realised that what I really wanted was to keep control over my application environment and avoid the following problems:
 * missing dependencies
@@ -30,9 +30,9 @@ So I decided to make containerisation part of my own CI process and not delegate
 
 #### ASP.NET Core Containerisation
 
-There are a few container technologies available but I am familiar with [Docker](https://www.docker.com/) so I decided to stick to it. Using Docker to containerise an ASP.NET Core application is fairly easy thanks to Docker's [documentation](https://docs.docker.com/) and to Microsoft base image [microsoft/aspnetcore:2.0](https://hub.docker.com/r/microsoft/aspnetcore/). The challenges are more around how to use it. By that I mean there are quite a few decisions to make: what should the container contain? Should the environment configuration be injected? How should configuration or sensitive data be injected? How should it integrate with the Continuous Integration process?
+There are a few container technologies available but I am familiar with [Docker](https://www.docker.com/) so I decided to stick with it. Using Docker to containerise an ASP.NET Core application is fairly easy thanks to Docker's [documentation](https://docs.docker.com/) and to Microsoft base image [microsoft/aspnetcore:2.0](https://hub.docker.com/r/microsoft/aspnetcore/). The challenges are more around how to use it. By that I mean there are quite a few decisions to make: what should the container contain? Should the environment configuration be injected? How should configuration or sensitive data be injected? How should it integrate with the Continuous Integration process?
 <br/>
-I am showing below how I answered these questions. Bear in mind that I am by no mean an expert!
+Below, I will show how I answered these questions. Bear in mind that I am by no means an expert!
 
 ##### Container content
 
@@ -49,12 +49,12 @@ So very simple.
 
 ##### Injecting configuration
 
-Very often applications needs extra bit of information in order to run properly: for instance web addresses or API key to connect to external services. So let's look at how to inject data to the container at start time.
+Very often applications need extra bits of information in order to run properly: for instance web addresses or API keys to connect to external services. So let's look at how to inject data to the container at start time.
 <br/>
 As far as I know they are two solutions out of the box. Either use environment variables. Or mount a volume. I couldn't figure out which solution is best so I took the simplest approach for my use case: the data I want to inject is a JSON file so it was simpler to just mount it.
 
 This is the C# code that reads the configuration:
-```
+```C#
 public class Startup
 {
     public Startup(IHostingEnvironment env)
@@ -75,4 +75,4 @@ docker run -p 1234:80 -v /path/to/sensitive/data/dir:/config myapp
 
 <br/>
 
-So at this stage I am able to locally create a Docker image with my code and run it locally with different configurations. The process is quite manual so in the next post I am describing how I integrated it to my Continuous Integration process.
+So at this stage I am able to locally create a Docker image with my code and run it with different configurations. The process is quite manual so in the next post I will describe how I integrated it with my Continuous Integration process.
