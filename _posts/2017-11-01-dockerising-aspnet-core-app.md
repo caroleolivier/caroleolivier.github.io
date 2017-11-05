@@ -5,7 +5,7 @@ date: 2017-11-01
 ---
 
 
-A few days ago I started looking at ways to deploy my [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) application. I looked at [Cloud](https://en.wikipedia.org/wiki/Cloud_computing) solutions but ended up deciding to first focus on containerising my application and only later to look at deployment solutions. In this post I will explain the rational behind my decision and how I containerised my application.
+A few days ago I started looking at ways to deploy my [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) application. I looked at [Cloud](https://en.wikipedia.org/wiki/Cloud_computing) solutions but ended up deciding to first focus on containerising my application and only later to look at deployment solutions. In this post I will explain the rationale behind my decision and how I containerised my application.
 
 
 #### ASP.NET Core deployment to the Cloud
@@ -49,7 +49,7 @@ So very simple.
 
 ##### Injecting configuration
 
-Very often applications need extra bit of information in order to run properly: for instance web addresses or API key to connect to external services. So let's look at how to inject data to the container at start time.
+Very often applications need extra bits of information in order to run properly: for instance web addresses or API keys to connect to external services. So let's look at how to inject data to the container at start time.
 <br/>
 As far as I know they are two solutions out of the box. Either use environment variables. Or mount a volume. I couldn't figure out which solution is best so I took the simplest approach for my use case: the data I want to inject is a JSON file so it was simpler to just mount it.
 
