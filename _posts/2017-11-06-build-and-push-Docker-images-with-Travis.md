@@ -30,7 +30,7 @@ A few days ago, I described [here](https://caroleolivier.github.io/blog/2017/11/
 
 One thing I haven't talked about yet is where my Docker image should be stored. Ultimately I want to be able to deploy my application so the Docker image needs to be available somewhere.
 <br/>
-The best (and simplest) way to store Docker images is to use a [Docker Registry](https://docs.docker.com/registry/), a service dedicated to storing Docker images and expose metadata about them. There are plenty of Docker Registry providers available. Most of the Cloud providers (probably all really) offer Docker Registries. I didn't do any extensive research around which one is the best, I picked one that seemed easy to use: [Docker Hub](https://hub.docker.com/). It has a nice web interface and is free (see [here](https://hub.docker.com/r/microsoft/aspnetcore/) for intance).
+The best (and simplest) way to store Docker images is to use a [Docker Registry](https://docs.docker.com/registry/), a service dedicated to storing Docker images and exposing metadata about them. There are plenty of Docker Registry providers available. Most of the Cloud providers (probably all really) offer Docker Registries. I didn't do any extensive research around which one is the best, I picked one that seemed easy to use: [Docker Hub](https://hub.docker.com/). It has a nice web interface and is free (see [here](https://hub.docker.com/r/microsoft/aspnetcore/) for intance).
 <br/>
 I opened an account and created a [Docker Repository](https://docs.docker.com/glossary/?term=repository) for my images. A Docker repository is a collection of images with the same name but different tags. Typically, there is one registry per application and as many images as there are versions.
 <br/>
