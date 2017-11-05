@@ -54,7 +54,7 @@ Very often applications need extra bits of information in order to run properly:
 As far as I know they are two solutions out of the box. Either use environment variables. Or mount a volume. I couldn't figure out which solution is best so I took the simplest approach for my use case: the data I want to inject is a JSON file so it was simpler to just mount it.
 
 This is the C# code that reads the configuration:
-```
+```C#
 public class Startup
 {
     public Startup(IHostingEnvironment env)
