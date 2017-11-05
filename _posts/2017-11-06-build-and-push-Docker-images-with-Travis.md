@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Docker Containerisation with Travis
-date: 2017-11-02
+date: 2017-11-06
 ---
 
-Yesterday, I described [here](ZZZ) how to package an [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) application into a [Docker](https://www.docker.com/) container. Today, I will show how I integrated it to my Continous Integration workflow with [Travis](https://travis-ci.org/).
+A few days ago, I described [here](ZZZ) how to package an [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) application into a [Docker](https://www.docker.com/) container. Today, I will show how I integrated it to my Continous Integration workflow with [Travis](https://travis-ci.org/).
 
 ##### Building Docker images
 
 [Travis supports Docker](https://docs.travis-ci.com/user/docker/) so it is very straightforward to build a Docker image with it. All you need to do is add Docker as a service dependency and add the Docker build command to the script section.
 
-```
+```yaml
 - language: csharp
   sudo: required
   services:
@@ -35,7 +35,7 @@ The best (and simplest) way to store Docker images is to use a [Docker Registry]
 I opened an account and created a [Docker Repository](https://docs.docker.com/glossary/?term=repository) for my images. A Docker repository is a collection of images with the same name but different tags. Typically, there is one registry per application and as many images as there are versions.
 <br/>
 Once my repository created, it was very easy to push images to it and to add the command to my Travis configuration file:
-```
+```yaml
 ...
   script:
     ....
@@ -56,7 +56,7 @@ Luckily, Travis supports the encryption of variables so it was very easy to solv
 ##### Final Travis configuration
 
 And this is my final Travis configuration (or similar):
-```
+```yaml
 - language: csharp
   sudo: required
   services:
