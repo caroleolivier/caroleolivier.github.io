@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docker Containerisation with Travis
+title: Docker containerisation with Travis
 date: 2017-11-06
 ---
 
