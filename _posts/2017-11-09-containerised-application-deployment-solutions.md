@@ -59,6 +59,6 @@ IBM new alternative is a service similar to Microsoft AKS and Amazon ECS called 
 
 In conclusion, I spent a lot of time googling, testing, having fun, not having fun, losing my hairs and not progressing a lot in term of deployment but learning a lot about container deployment to the cloud.
 <br/>
-Because my application is containerised and only needs Docker to run, I always assumed I would find a simple and cheap off-the-shelf solution but it looks there isn't one (I am still wondering if I missed something to be honest). As I came to realise during my investigation, cloud providers offer many solutions for complex applications that require high availability and easy scaling. However, my use case is probably too simple and cloud providers wouldn't make a lot of money out of it. From a business perspective it is starting to make sense to me why I can't find a solution or whe the solution I find are being deprecated.
+Because my application is containerised and only needs Docker to run, I always assumed I would find a simple and cheap off-the-shelf solution but it looks there isn't one (I am still wondering if I missed something to be honest). As I came to realise during my investigation, cloud providers offer many solutions for complex applications that require high availability and easy scaling. However, my use case is probably too simple and cloud providers wouldn't make a lot of money out of it.
 
 So the best solution to my problem probably is to get a server with Docker installed and manage it myself. I will be looking into this topic next.
