@@ -55,21 +55,10 @@ As I was searching for new alternatives to deploy my application I came across t
 IBM new alternative is a service similar to Microsoft AKS and Amazon ECS called [IBM Cloud Container Service](https://www.ibm.com/cloud/container-service). As I said before, this type of services are great but add too much complexity to my simple use case.
 
 
-#### A few notes
-
-If you go into your own cloud adventure, bear in mind that although many providers offer free accounts, you still need to give them your credit card number. The official reason being make sure you are not a robot.
-
-
 <br/>
 
-TODO: reformulate
-
-
-In conclusion, I spent a lot of time googling, trying, having fun, not having fun, losing my hairs and not progressing a lot in term of deployment but learning a lot about container deployment to the cloud.
+In conclusion, I spent a lot of time googling, testing, having fun, not having fun, losing my hairs and not progressing a lot in term of deployment but learning a lot about container deployment to the cloud.
 <br/>
-I thought deploying my application via a cloud provider was the cheapest and easiest solution but I realise now that it isn't and it makes sense.
-<br/>First, it isn't easy because the deployment use case that cloud providers are targeting is the deployment of large and complex applications that need high availability and easy scalability. For instance, a website with high volume traffic at peak hours. This is a complex but very common problem so from a business perspective it makes sense for cloud providers to tailor to that use case (rather than mine where clearly they won't make much money, haha).
-<br/>
-Second, using a cloud solution is not easy. It is complex and there is a lot to learn and to know. Even if cloud providers provide an abstraction layer, it is important to understand what happens behind the scene. And in my opinion, this is a full-time job. So for companies with complex applications it is likely cheaper to use a cloud provider instead of having a full IT department for machine provisioning, maintenance, support, etc... and they can get away with a couple of people, however for individuals like me who wants something up and running quickly I feel like it's not!
+Because my application is containerised and only needs Docker to run, I always assumed I would find a simple and cheap off-the-shelf solution but it looks there isn't one (I am still wondering if I missed something to be honest). As I came to realise during my investigation, cloud providers offer many solutions for complex applications that require high availability and easy scaling. However, my use case is probably too simple and cloud providers wouldn't make a lot of money out of it. From a business perspective it is starting to make sense to me why I can't find a solution or whe the solution I find are being deprecated.
 
-This being said, I will still take a look at Microsoft Azure Web App for Container deployment solutions because it is free but if it doesn't work I will explore getting a virtual machine and handling the rest myself.
+So the best solution to my problem probably is to get a server with Docker installed and manage it myself. I will be looking into this topic next.
