@@ -1,12 +1,25 @@
 ---
 layout: post
 title: Deployment solutions of a containerised application
-date: 2017-11-07
+date: 2017-11-08
 ---
 
-I have spent part of last week losing hairs over container deployments. If you have read my previous posts, you know by now that I have developed a very simple application and packaged into a Docker container. I am currently trying to deploy this application and I never thought deployment would be the challenging part. I looked at container deployments offered by cloud providers because I thought it would be the easiest and cheapest solutions. It probably is the cheapest but not necessarily the easiest!
+I have spent part of last week pulling my hair out over container deployments. If you have read my previous posts, you know by now that I have developed a very simple application and packaged into a Docker container. I am currently trying to deploy this application and I never thought deployment would be the challenging part. I looked at container deployments offered by cloud providers because I thought it would be the easiest and cheapest solutions. It probably is the cheapest but not necessarily the easiest!
 
 In this post I am sharing my experience with four cloud providers that offer container deployment service. If you are reading this article, bear in mind that I am no expert in cloud deployments and I am looking at a very particular use case: deployment of a Docker container that needs good availability (it is okay if it goes down once in a while) and does not need to be scalable (one instance running is enough).
+
+#### Search criteria
+
+Obviously, the solution needs to cover my use case, i.e. deployment of a web application packaged into a Docker container. On top of that here are my criterias:
+
+* **Price**
+<br/>The project I am working on is just a pet project and I won't be making any money with it, so the cheaper, the better.
+
+* **Configuration**
+<br/>I am after a solution easy to configure. My intention is not to become a cloud deployment expert and spend ages learning how to use a particular deployment service, so the easier to configure and learn the better.
+
+* **One-click deployment**
+<br/>The deployment itself must be easy and provides an API or a way for me to easily integrate it with my continuous integration pipeline.
 
 
 #### Microsoft Azure
@@ -16,7 +29,7 @@ In terms of container deployments it provides a wide range of solutions. It make
 
 * [Azure Container Service](https://azure.microsoft.com/en-gb/services/container-service/) (AKS)
 <br/>This service seems to be great for complex containerised applications that require load-balancing, easy scaling, availability and container orchestration.
-<br/>In my case, while I want my service to be always available, the rest is not going to be a problem and the complexity this service seems to be adding is not worth it.
+<br/>In my case, while I want my service to be always available, the rest is not going to be a problem and the complexity this service is adding is not worth it. As an example, it uses [Kubernetes](https://kubernetes.io/) as default orchestrator, do I really need it for my one container application? ^^
 
 * [Container Instance](https://azure.microsoft.com/en-gb/services/container-instances/)
 <br/>This service addresses a different type of needs to AKS. It offers like a computing farm where users can send jobs on-demand and paid for the processing time.
@@ -24,6 +37,7 @@ In terms of container deployments it provides a wide range of solutions. It make
 * [Web App for Containers](https://azure.microsoft.com/en-gb/services/app-service/containers/)
 <br/>As its name indicates, it is a service dedicated to the deployment of containerised web applications.
 <br/>It looks a lot simpler than AKS as it doesn't have, or at least expose, the orchestration layer AKS offers. I am not sure how it works behind the scene because it still needs to do some kind of orchestration I would have thought :/
+<br/>This solution could be a good candidate for my use case.
 
 
 #### Google Cloud
@@ -43,9 +57,15 @@ Oh well... Next!
 
 #### Amazon Web Service (AWS)
 
-AWS offers a service similar to Microsoft Azure AKS service called EC2 Container Service (ECS) (I think ECS may have been there before AKS so I shall probably say "Microsoft Azure offers a service similar to ECS" :)). It also offers free accounts so it is great for testing.
-<br/>
-I was able to deploy my application to AWS (kind of, I stopped before being completely finished) but I didn't really enjoy the experience. I followed this tutorial [here](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_GetStarted.html) and it took me quite some time to create all the things that were required: cluster, service, task, IAM, etc... It felt really overhelming to do and learn about so many components for deploying something as simple as my application. I feel like I barely scratched the surface but it was already too much. So I decided to give up and move on.
+[AWS](https://aws.amazon.com) offers free accounts like Azure so it is really great for testing. It also provides many deployment solutions for containerised applications, here are the ones I found:
+
+* [EC2 Container Service (ECS)](https://aws.amazon.com/ecs)
+<br/>ECS is similar to AKS (I think ECS may have existed before AKS so I shall probably say "Microsoft Azure offers a service similar to ECS" :)).
+<br/>I actually tested this one and was able to deploy my application to AWS but I didn't really enjoy the experience. I followed this tutorial [here](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_GetStarted.html) and it took me quite some time to create all the things that were required: cluster, service, task, IAM, etc... Having spent so much time looking at deployment solutions I realise now that I shouln't even have considered this service. It is for applications way more complex than mine!
+
+* [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk)
+<br/>I somehow missed this solution, one of my friends mentioned it to me.
+<br/>Elastic Beanstalk is a simple service to deploy and scale applications. I haven't looked into it yet but it looks like it supports Docker and it could a good candidate for my use case.
 
 
 #### IBM Bluemix
@@ -57,8 +77,8 @@ IBM new alternative is a service similar to Microsoft AKS and Amazon ECS called 
 
 <br/>
 
-In conclusion, I spent a lot of time googling, testing, having fun, not having fun, losing my hairs and not progressing a lot in term of deployment but learning a lot about container deployment to the cloud.
+In conclusion, I spent a lot of time googling, testing, having fun, not having fun, pulling my hair out and not progressing a lot in term of deployment but learning a lot about container deployment to the cloud.
 <br/>
-Because my application is containerised and only needs Docker to run, I always assumed I would find a simple and cheap off-the-shelf solution but it looks there isn't one (I am still wondering if I missed something to be honest). As I came to realise during my investigation, cloud providers offer many solutions for complex applications that require high availability and easy scaling. However, my use case is probably too simple and cloud providers wouldn't make a lot of money out of it.
-
-So the best solution to my problem probably is to get a server with Docker installed and manage it myself. I will be looking into this topic next.
+To be honest at this stage, I still feel overwhelmed by the amount of solutions available. I have barely scratched the surface and it looks like my search led me to more complex solutions that I need. I don't need a cluster of machines with a container orchestrator, in its simplest form I need a server with Docker installed and a way to reach this server.
+<br/>
+I am going to pause deployment for a few days, I could use a break! Then, I will look at single container deployment such as [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk) and [Azure Web App for Containers](https://azure.microsoft.com/en-gb/services/app-service/containers/). I will also look at server provisioning providers, it may well be the best solution in my case!
