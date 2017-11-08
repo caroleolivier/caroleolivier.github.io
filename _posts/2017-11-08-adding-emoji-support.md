@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2017-11-08
-title: Adding emoji support to my website
+title: Adding GitHub-flavored emoji support to my website
 ---
 
 Today, I looked into an important problem: the lack of support for GitHub like emojis in my website. 
