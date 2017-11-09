@@ -37,7 +37,7 @@ In terms of container deployments it provides a wide range of solutions. It make
 * [Web App for Containers](https://azure.microsoft.com/en-gb/services/app-service/containers/)
 <br/>As its name indicates, it is a service dedicated to the deployment of containerised web applications.
 <br/>It looks a lot simpler than AKS as it doesn't have, or at least expose, the orchestration layer AKS offers. I am not sure how it works behind the scene because it still needs to do some kind of orchestration I would have thought :/
-<br/>This solution could be a good candidate for my use case.
+<br/>This solution could be a good candidate for my use case. However, looking at the [price details](https://azure.microsoft.com/en-gb/pricing/details/app-service/), it looks like it is not free.
 
 
 #### Google Cloud
