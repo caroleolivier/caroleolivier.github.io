@@ -1,10 +1,13 @@
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+sass:
+    sass_dir: assets/sass
+plugins:
+  - jemoji
+
 name: Carole Olivier
 email: to be added
 linkedin: https://www.linkedin.com/in/carole-olivier-2b845955/
 github: https://github.com/caroleolivier
 website: https://caroleolivier.github.io/
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
-sass:
-    sass_dir: assets/sass
 google_analytics: UA-107919026-1
