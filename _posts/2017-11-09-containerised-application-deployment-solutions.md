@@ -33,11 +33,12 @@ In terms of container deployments it provides a wide range of solutions. It make
 
 * [Container Instance](https://azure.microsoft.com/en-gb/services/container-instances/)
 <br/>This service addresses a different type of needs to AKS. It offers like a computing farm where users can send jobs on-demand and paid for the processing time.
+<br/>I guess I could use it but it is definitely not meant for my use case. I want my service up all the time even if no one uses it.
 
 * [Web App for Containers](https://azure.microsoft.com/en-gb/services/app-service/containers/)
 <br/>As its name indicates, it is a service dedicated to the deployment of containerised web applications.
-<br/>It looks a lot simpler than AKS as it doesn't have, or at least expose, the orchestration layer AKS offers. I am not sure how it works behind the scene because it still needs to do some kind of orchestration I would have thought :/
-<br/>This solution could be a good candidate for my use case. However, looking at the [price details](https://azure.microsoft.com/en-gb/pricing/details/app-service/), it looks like it is not free.
+<br/>It looks a lot simpler than AKS as it doesn't have, or at least expose, the orchestration layer.
+<br/>This solution could be a good candidate for my use case. However, looking at the [price details](https://azure.microsoft.com/en-gb/pricing/details/app-service/), it is not free and requires at least a Basic Service Plan.
 
 
 #### Google Cloud
@@ -49,7 +50,7 @@ As a non-business European user, Google Cloud is not available:
 > If you are located in the European Union and the sole purpose for which you want to use Google Cloud Platform services has no potential economic benefit you should not use the service. If you have already started using Google Cloud Platform, you should discontinue using the service. See Create, modify, or close your billing account to learn how to disable billing on your projects.
 > [Google Cloud](https://cloud.google.com/free/docs/frequently-asked-questions)
 
-Googling the topic a bit it looks like it has something to do with taxes. Google Cloud needs a VAT number so you must be a business to use Google Cloud Platform.
+Googling the topic a bit, it looks like it has something to do with taxes. Google Cloud needs a VAT number so you must be a business to use Google Cloud Platform.
 <br/>
 
 Oh well... Next!
@@ -65,7 +66,7 @@ Oh well... Next!
 
 * [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk)
 <br/>I somehow missed this solution, one of my friends mentioned it to me.
-<br/>Elastic Beanstalk is a simple service to deploy and scale applications. I haven't looked into it yet but it looks like it supports Docker and it could a good candidate for my use case.
+<br/>Elastic Beanstalk is a simple service to deploy and scale applications. I haven't looked into it yet but it looks like it supports Docker and it could a good candidate for my use case. However, I must admit I am not a big fan of Amazon documentation.
 
 
 #### IBM Bluemix
@@ -79,6 +80,6 @@ IBM new alternative is a service similar to Microsoft AKS and Amazon ECS called 
 
 In conclusion, I spent a lot of time googling, testing, having fun, not having fun, pulling my hair out and not progressing a lot in term of deployment but learning a lot about container deployment to the cloud.
 <br/>
-To be honest at this stage, I still feel overwhelmed by the amount of solutions available. I have barely scratched the surface and it looks like my search led me to more complex solutions that I need. I don't need a cluster of machines with a container orchestrator, in its simplest form I need a server with Docker installed and a way to reach this server.
+To be honest at this stage, I still feel overwhelmed by the amount of solutions available. Also, it looks like my search led me to more complex solutions that I need. I don't need a cluster of machines with a container orchestrator, in its simplest form I need a server with Docker installed and a way to reach this server.
 <br/>
 I am going to pause deployment for a few days, I could use a break! Then, I will look at single container deployment such as [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk) and [Azure Web App for Containers](https://azure.microsoft.com/en-gb/services/app-service/containers/). I will also look at server provisioning providers, it may well be the best solution in my case!
