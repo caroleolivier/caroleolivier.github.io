@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deployment solutions for a containerised application
-date: 2017-11-15
+date: 2017-11-17
 ---
 
 I have spent part of last week pulling my hair out over container deployments. If you have read my previous posts, you know by now that I have developed a very simple application and packaged it into a Docker container. I am currently trying to deploy this application and I never thought deployment would be the challenging part. I looked at container deployments offered by cloud providers because I thought it would be the easiest and cheapest solution. It probably is the cheapest but not necessarily the easiest!
