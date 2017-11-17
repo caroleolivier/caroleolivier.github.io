@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript Modules
-date: '2017-11-17'
+date: '2017-11-19'
 ---
 
 Today, I looked a bit closer at JavaScript Modules. I have been using modules since I started using JavaScript but I must admit I have never looked into the subject deeply. Using [Babel](https://babeljs.io/) and [webpack](https://webpack.js.org/) things have been working fine and I just assumed webpack built a sort of dependency tree and Babel helped it understanding the latest ES module syntax (import/export).
