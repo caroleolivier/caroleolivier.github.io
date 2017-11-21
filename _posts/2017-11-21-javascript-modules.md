@@ -4,20 +4,20 @@ title: JavaScript Modules
 date: '2017-11-21'
 ---
 
-Today, I looked a bit closer at JavaScript Modules. I have been using modules since I started using JavaScript but I must admit I have never looked into the subject deeply. Using [Babel](https://babeljs.io/) and [webpack](https://webpack.js.org/) things have been working fine and I just assumed webpack built a sort of dependency tree and Babel helped it understanding the latest ES module syntax (import/export).
+Today, I looked a bit closer at JavaScript Modules. I have been using modules since I started using JavaScript but I must admit I have never looked into the subject deeply. Using [Babel](https://babeljs.io/) (a JavaScript transpiler) and [webpack](https://webpack.js.org/) (a JavaScript bundler) things have been working fine and I just assumed webpack built a sort of dependency tree and Babel helped it understand the latest ES module syntax (import/export).
 <br/>
 This post is about what I learnt and understood about modules in the context of my setup (babel + webpack). To be honest this is from me to me, if you want to learn about modules and you happen to read this post, be critical.
 
 #### JavaScript Modules
 
-First of all, what is a module? The idea behind module is to isolate a piece of code so that it is easier to maintain, remove, modify, use. Modules are available natively in many languages but may be called differently: C# namespace, Java package, python modules, etc...
+First of all, what is a module? The idea behind module is to isolate a piece of code so that it is easier to maintain, remove, modify, use. The concept of modules exist in many languages but might be called different things: C# namespace, Java package, python modules, etc...
 
-In the JavaScript language, modules have been available natively only since 2015 (wow!) with the ECMAScript 6 [standard](http://www.ecma-international.org/ecma-262/6.0/ECMA-262.pdf). Not being able to break down code into modules is madness (in my opinion) and the community has come up with other ways to add modules to the language. (I am not really sure why modules were not added before, I don't know what the process is to create a new ECMAScript standard).
+In the JavaScript language, modules have only been available natively since 2015 (wow!) with the ECMAScript 6 [standard](http://www.ecma-international.org/ecma-262/6.0/ECMA-262.pdf). Not being able to break down code into modules is madness (in my opinion) and the community has come up with other ways to add modules to the language. (I am not really sure why modules were not added before, I don't know what the process is to create a new ECMAScript standard).
 <br/>
 The most famous module standards (pre ES6) are [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md)
 (a browser targeted standard whose most famous implementation is [requireJS](http://requirejs.org/)) and [CommonJS Modules](http://wiki.commonjs.org/wiki/Modules/1.1) (a standard defined by the group [CommonJS](https://en.wikipedia.org/wiki/CommonJS)).
 
-So depending on the context, people may refer to ES modules (ESM), CommonJS (CJS) modules or AMD (I don't think there is even a consistency in acronym 🤔).
+So depending on the context, people may refer to ES modules (ESM), CommonJS (CJS) modules or AMD (I don't think there is even consistency in acronym 🤔).
 
 
 
@@ -38,7 +38,7 @@ console.log(str);
 
 ##### Babel
 
-To experiment with Babel I installed [babel-cli](https://babeljs.io/docs/usage/cli/) and configure it using a .babelrc config file. Then I run `npx babel-cli main.js simple.js -o output.js`.
+To experiment with Babel I installed [babel-cli](https://babeljs.io/docs/usage/cli/) and configured it using a .babelrc config file. Then I ran `npx babel-cli main.js simple.js -o output.js`.
 ```json
 // .babelrc
 {
@@ -62,7 +62,7 @@ var _simple = require('./simple');
 console.log(_simple.str);
 ```
 
-Ah that's very interesting! ES6 export statements are added as properties to an object called `exports` while ES6 import use a function called `require`. However, none of them is defined in the output file so where are they coming from?! And this is where knowing a bit about the history of JavaScript modules is useful. Babel's job is to transpile to ES5 and since ES5 has no native modules, it converts ES Modules to one of the pre ES6 modules standard (e.g. CommonJS, AMD). By default, it uses the CommonJS modules standard and if you check the standard [here](http://wiki.commonjs.org/wiki/Modules/1.1) you will see that `exports` and `require` are indeed defined!
+Ah that's very interesting! ES6 export statements are added as properties to an object called `exports` while ES6 import use a function called `require`. However, none of them is defined in the output file so where are they coming from?! This is where knowing a bit about the history of JavaScript modules is useful. Babel's job is to transpile to ES5 and since ES5 has no native modules, it converts ES Modules to one of the pre ES6 modules standard (e.g. CommonJS, AMD). By default, it uses the CommonJS modules standard and if you check the standard [here](http://wiki.commonjs.org/wiki/Modules/1.1) you will see that `exports` and `require` are indeed defined!
 <br/>  
 Note that it is possible to configure Babel to use other standards (see [here](https://babeljs.io/docs/plugins/preset-es2015/#optionsmodules) for the complete list):
 
@@ -91,7 +91,7 @@ define(['./simple'], function (_simple) {
 });
 ```
 
-So Babel transpiles ES6 modules to "something" well defined (AMD, CommonJS, etc...), this is great. However, where is the implementation of that "something" coming from? In the default configuration, `exports` and `require` must be defined somewhere, else whatever is executing my JavaScript (browser, node environment) won't be able to run it (except if there is some runtime magic I don't know about which would only half surprise me).
+So Babel transpiles ES6 modules to "something" well defined (AMD, CommonJS, etc...), this is great. However, where is the implementation of that "something" coming from? In the default configuration, `exports` and `require` must be defined somewhere, otherwise whatever is executing my JavaScript (browser, node environment) won't be able to run it (except if there is some runtime magic I don't know about which would only half surprise me).
 <br/>
 So let's have a look at webpack, the other tool I use in my setup.
 
@@ -203,7 +203,7 @@ And voilà! The missing piece of the puzzle is here. webpack is indeed the one t
 
 #### Conclusion
 
-So here is what I understand about modules now (and remember to double check what I am writting): JavaScript modules exist natively only since [ES6](http://www.ecma-international.org/ecma-262/6.0/ECMA-262.pdf) (2015) so they are very recent. However, modules were added to the languages thanks to third party libraries and standards such as [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md) and [CommonJS Modules](http://wiki.commonjs.org/wiki/Modules/1.1). For web applications, since browsers do not widely support ES6 yet, ES6 modules must be transpiled to ES5 and some module implementation. In practice, when using [Babel](https://babeljs.io/) and [webpack](https://webpack.js.org/), Babel first transpiles ES6 modules to CommonJS modules (by default but can be changed) and webpack later converts it to its own module implementation.
+So here is what I understand about modules now (and remember to double check what I am writing): JavaScript modules have only existed since [ES6](http://www.ecma-international.org/ecma-262/6.0/ECMA-262.pdf) (2015) so they are very recent. However, modules were added to the languages thanks to third party libraries and standards such as [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md) and [CommonJS Modules](http://wiki.commonjs.org/wiki/Modules/1.1). For web applications, since browsers do not widely support ES6 yet, ES6 modules must be transpiled to ES5 and some module implementation. In practice, when using [Babel](https://babeljs.io/) and [webpack](https://webpack.js.org/), Babel first transpiles ES6 modules to CommonJS modules (by default but this can be changed) and webpack later converts it to its own module implementation.
 
 And this is how modules are being taken care of in my setup, phew!
 
