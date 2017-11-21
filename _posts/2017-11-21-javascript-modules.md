@@ -17,7 +17,7 @@ In the JavaScript language, modules have only been available natively since 2015
 The most famous module standards (pre ES6) are [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md)
 (a browser targeted standard whose most famous implementation is [requireJS](http://requirejs.org/)) and [CommonJS Modules](http://wiki.commonjs.org/wiki/Modules/1.1) (a standard defined by the group [CommonJS](https://en.wikipedia.org/wiki/CommonJS)).
 
-So depending on the context, people may refer to ES modules (ESM), CommonJS (CJS) modules or AMD (I don't think there is even consistency in acronym 🤔).
+So depending on the context, people may refer to ES modules (ESM), CommonJS (CJS) modules or AMD (I don't think there is even consistency in acronyms 🤔).
 
 
 
@@ -196,12 +196,12 @@ var str = exports.str = "Hello World";
 /******/ ]);
 {% endhighlight %}
 
-The code is not complicated but not straightforward either if you don't debug through it. In a nutshell, webpack defines a function for each module (line 69 and 80) and stores them in an array. It then loads the first module, i.e. calls `__webpack_require__(0)` (line 64) which executes the first function in the array (line 21). Using this mechanism, webpack loads each module in the dependency graph (for instance module `1` (simple.js) is loaded by module `0` at line 74).
+The code is not complicated but not straightforward either so it might help to step through it with a debugger. In a nutshell, webpack defines a function for each module (line 69 and 80) and stores them in an array. It then loads the first module, i.e. calls `__webpack_require__(0)` (line 64) which executes the first function in the array (line 21). Using this mechanism, webpack loads each module in the dependency graph (for instance module `1` (simple.js) is loaded by module `0` at line 74).
 
 
 #### Conclusion
 
-So here is what I understand about modules now (and remember to double check what I am writing): JavaScript modules have only existed since [ES6](http://www.ecma-international.org/ecma-262/6.0/ECMA-262.pdf) (2015) so they are very recent. However, modules were added to the languages thanks to third party libraries and standards such as [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md) and [CommonJS Modules](http://wiki.commonjs.org/wiki/Modules/1.1). For web applications, since browsers do not widely support ES6 yet, ES6 modules must be transpiled to ES5 and some module implementation. In practice, when using [Babel](https://babeljs.io/) and [webpack](https://webpack.js.org/), Babel first transpiles ES6 modules to CommonJS modules (by default but this can be changed) and webpack later converts it to its own module implementation.
+So here is what I understand about modules now (and remember to double check what I have written): JavaScript modules have only existed since [ES6](http://www.ecma-international.org/ecma-262/6.0/ECMA-262.pdf) (2015) so they are very recent. However, modules were added to the languages thanks to third party libraries and standards such as [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md) and [CommonJS Modules](http://wiki.commonjs.org/wiki/Modules/1.1). For web applications, since browsers do not widely support ES6 yet, ES6 modules must be transpiled to ES5 and some module implementation. In practice, when using [Babel](https://babeljs.io/) and [webpack](https://webpack.js.org/), Babel first transpiles ES6 modules to CommonJS modules (by default but this can be changed) and webpack later converts it to its own module implementation.
 
 And this is how modules are being taken care of in my setup, phew!
 
