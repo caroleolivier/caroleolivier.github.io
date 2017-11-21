@@ -62,7 +62,7 @@ var _simple = require('./simple');
 console.log(_simple.str);
 ```
 
-Ah that's very interesting! ES6 export statements are added as properties to an object called `exports` while ES6 import use a function called `require`. However, none of them is defined in the output file so where are they coming from?! This is where knowing a bit about the history of JavaScript modules is useful. Babel's job is to transpile to ES5 and since ES5 has no native modules, it converts ES Modules to one of the pre ES6 modules standard (e.g. CommonJS, AMD). By default, it uses the CommonJS modules standard and if you check the standard [here](http://wiki.commonjs.org/wiki/Modules/1.1) you will see that `exports` and `require` are indeed defined!
+Ah that's very interesting! ES6 export statements are added as properties to an object called `exports` while ES6 import use a function called `require`. However, neither of them are defined in the output file so where are they coming from?! This is where knowing a bit about the history of JavaScript modules is useful. Babel's job is to transpile to ES5 and since ES5 has no native modules, it converts ES Modules to one of the pre ES6 modules standard (e.g. CommonJS, AMD). By default, it uses the CommonJS modules standard and if you check the standard [here](http://wiki.commonjs.org/wiki/Modules/1.1) you will see that `exports` and `require` are indeed defined!
 <br/>  
 Note that it is possible to configure Babel to use other standards (see [here](https://babeljs.io/docs/plugins/preset-es2015/#optionsmodules) for the complete list):
 
