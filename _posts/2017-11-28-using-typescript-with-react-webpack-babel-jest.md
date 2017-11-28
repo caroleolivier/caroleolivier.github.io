@@ -4,7 +4,7 @@ title: Using TypeScript with React, Webpack, Babel and Jest
 date: 2017-11-28
 ---
 
-Yesterday I added support for [TypeScript](https://www.typescriptlang.org/) to my [minimal-react-starter]() project. I am sharing my experience and a few tricks in this post.
+Yesterday I added support for [TypeScript](https://www.typescriptlang.org/) to my [minimal-react-starter](https://github.com/caroleolivier/minimal-react-starter/releases/tag/v6.0.0) project. I am sharing my experience and a few tricks in this post.
 <br/>
 Please note this is not a tutorial about [TypeScript](https://www.typescriptlang.org/), [React](https://reactjs.org/), [Babel](https://babeljs.io), [webpack](webpack.js.org) or [Jest](https://facebook.github.io/jest/). This post is aimed at people who already know these technologies, and are curious to know how to stitch them together to get a working React app written in TypeScript.
 
