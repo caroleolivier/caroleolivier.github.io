@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Important news about the hamburger emoji
-date: 2017-12-03
+date: 2017-12-05
 ---
 
 For those of you reading my blog, I thought I would bring your attention to a very important piece of information: [Google fixed the burger emoji in Android 8.1](https://techcrunch.com/2017/11/28/whew-google-fixed-the-burger-emoji-in-android-8-1/). Yep, that's right, the Android emoji used to have the cheese at the bottom, but they are "fixing" it:
