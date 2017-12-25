@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS-in-JavaScript with Styled Components 🎅🏻
+title: CSS-in-JavaScript with styled-components 🎅🏻
 date: 2017-12-25
 ---
 
