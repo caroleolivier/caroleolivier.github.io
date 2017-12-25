@@ -8,7 +8,7 @@ I started a new job recently and I am learning a looooooooot of new technologies
 
 #### CSS-in-JavaScript
 
-A few months ago, I wrote an [article](https://caroleolivier.github.io/blog/2017/10/06/styling-react-app) about using [CSS modules](https://github.com/css-modules/css-modules). I really liked CSS modules because they allow me to locally scope CSS classes and easyly maintain stylesheets.
+A few months ago, I wrote an [article](https://caroleolivier.github.io/blog/2017/10/06/styling-react-app) about using [CSS modules](https://github.com/css-modules/css-modules). I really liked CSS modules because they allow me to locally scope CSS classes and easily maintain stylesheets.
 CSS-in-JavaScript takes this concept a bit further and embeds the stylesheet **inside** the JavaScript file. In the context of React (I am not sure one would want to use it somewhere else 🤔), it is not that revolutionary as markup is already embedded in JavaScript. So why not the style? This is the question...
 
 It seems the community is quite divided over this topic (what?!), or at least people who write about the subject either love it or hate it. I don't know if either is right, it probably is somewhere in the middle, but I enjoy the battle and I highly recommend reading this article [Stop using CSS in JavaScript for web development](https://medium.com/@gajus/stop-using-css-in-javascript-for-web-development-fa32fb873dcc) **AND** the comments section. It is very interesting.
