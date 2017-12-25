@@ -8,17 +8,17 @@ I started a new job recently and I am learning a looooooooot of new technologies
 
 #### CSS-in-JavaScript
 
-A few months ago, I wrote an [article](https://caroleolivier.github.io/blog/2017/10/06/styling-react-app) about using [CSS modules](https://github.com/css-modules/css-modules). I really liked CSS modules because it allows to locally scope CSS classes and easyly maintain stylesheets.
+A few months ago, I wrote an [article](https://caroleolivier.github.io/blog/2017/10/06/styling-react-app) about using [CSS modules](https://github.com/css-modules/css-modules). I really liked CSS modules because they allow me to locally scope CSS classes and easyly maintain stylesheets.
 CSS-in-JavaScript takes this concept a bit further and embeds the stylesheet **inside** the JavaScript file. In the context of React (I am not sure one would want to use it somewhere else 🤔), it is not that revolutionary as markup is already embedded in JavaScript. So why not the style? This is the question...
 
-It seems the community is quite divided over that topic (what?!), or at least people who write about the subject either love it or hate it. I don't know if either is right, it probably is somewhere in the middle, but I enjoy the battle and I highly recommend reading this article [Stop using CSS in JavaScript for web development](https://medium.com/@gajus/stop-using-css-in-javascript-for-web-development-fa32fb873dcc) **AND** the comments section. It is very interesting.
+It seems the community is quite divided over this topic (what?!), or at least people who write about the subject either love it or hate it. I don't know if either is right, it probably is somewhere in the middle, but I enjoy the battle and I highly recommend reading this article [Stop using CSS in JavaScript for web development](https://medium.com/@gajus/stop-using-css-in-javascript-for-web-development-fa32fb873dcc) **AND** the comments section. It is very interesting.
 
 
 #### styled-components
 
-To illustrate what CSS-in-JavaScript can look like, I'll show here a few code snippets of styled-components, apparently the trendy library in that space.
+To illustrate what CSS-in-JavaScript can look like, I'll show here a few code snippets of styled-components, apparently the trendy library in this space.
 <br/>
-If you want to learn about it properly, head over to styled-components' [website](https://www.styled-components.com/). If you want to learn about the motivations behind it, watch the video with one of its author [here](https://www.styled-components.com/docs/basics) (it is good although slightly dramatic, haha). The video will give you another perspective on CSS-in-JavaScript to the article I mentioned earlier. I highly recommend reading and watching both.
+If you want to learn about it properly, head over to styled-components' [website](https://www.styled-components.com/). If you want to learn about the motivations behind it, watch the video with one of its authors [here](https://www.styled-components.com/docs/basics) (it is good although slightly dramatic, haha). The video will give you another perspective on CSS-in-JavaScript to the article I mentioned earlier. I highly recommend reading and watching both.
 
 This is what a React component created with styled-components looks like (copied from styled-components' [website](https://www.styled-components.com/docs/basics)):
 
