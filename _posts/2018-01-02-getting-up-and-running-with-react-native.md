@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting up and running with React Native
-date: 2018-01-01
+date: 2018-01-02
 ---
 
 Today, I meant to look into [react-native](https://facebook.github.io/react-native/). I know React (a little) but recently realised I had made some wrong assumptions about React Native: I thought the idea behind React and React-native was: **Learn once, write once, use everywhere**. It is NOT! The real motto is: **Learn once, use everywhere**, i.e. you learn the basics once but you can't have one code base targeting all platforms. What a disappointment... I thought with the help of some kind of web dark magic it was the case.
