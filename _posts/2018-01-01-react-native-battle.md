@@ -10,14 +10,14 @@ Anyway, since it is not the case and one needs to learn a few things that are Re
 <br/>
 I aimed to go through this [tutorial](https://facebook.github.io/react-native/docs/getting-started.html) on React Native website.
 
-##### Step 1
+##### Step 1: install the tool create-react-native-app
 ```
 npm install -g create-react-native-app
 ```
 
 => ✔️ Successful!
 
-##### Step 2
+##### Step 2: create a React Native app project
 ```
 create-react-native-app HelloWorld
 ```
@@ -35,3 +35,28 @@ After more reading on GitHub, I luckily came across a very useful comment on thi
 > when yarn is installed, CRNA already uses it by default to install packages.
 
 So I installed [yarn](https://yarnpkg.com/en/) (a package manager similar to npm) and it created my HelloWorld project! (Well it failed at the next step but that's okay, I feel like I haven't completely lost the battle...)
+
+
+##### Step 3: start the server
+
+```
+yarn start
+```
+
+=> ❌ Unfortunately, it failed too. But, again, with a very useful message.
+
+![yarn start error]({{ "/assets/blog/react-native-app-yarn-start-error.png" | absolute_url }}){:height="80%" width="80%"}
+
+I chose to install watchman (arbitrarily, I don't know what solution is best). However, when installing it it errored:
+
+![brew install watchman error]({{ "/assets/blog/react-native-app-yarn-start-error.png" | absolute_url }}){:height="80%" width="80%"}
+
+According to this [thread](https://stackoverflow.com/questions/29319378/cant-link-pcre-thru-brew-in-max-os-yosemite) on stackoverflow, brew requires the content of the folder /user/local to be owned by you.
+```
+sudo chown -R $(whoiam) /usr/local/*
+brew link pcre
+```
+And that solved the problem, I was able to start the server, yay!
+
+Note that if you try to run `sudo chown -R $(whoiam) /usr/local` as suggested in the stackoverflow thread, it fails on Mac High Sierra with `operation not permitted` (see [here](https://github.com/Homebrew/brew/issues/3228)). It looks like just the content, not the directory itself needs to be owned by you (and can be own by you).
+
