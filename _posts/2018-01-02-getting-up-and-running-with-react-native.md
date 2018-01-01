@@ -47,14 +47,14 @@ I chose to install watchman (arbitrarily, I don't know what solution is best). H
 
 ![brew install watchman error]({{ "/assets/blog/react-native-brew-watchman.png" | absolute_url }}){:height="55%" width="55%"}
 
-According to this [thread](https://stackoverflow.com/questions/29319378/cant-link-pcre-thru-brew-in-max-os-yosemite) on Stack Overflow, brew requires the content of the folder /user/local to be owned by you.
+According to this [thread](https://stackoverflow.com/questions/29319378/cant-link-pcre-thru-brew-in-max-os-yosemite) on Stack Overflow, brew requires the contents of the folder /user/local to be owned by you.
 ```
 sudo chown -R $(whoiam) /usr/local/*
 brew link pcre
 ```
 And that solved the problem, I was able to start the server, yay!
 
-Note that if you try to run `sudo chown -R $(whoiam) /usr/local` as suggested in the Stack Overflow thread, it fails on Mac High Sierra with `operation not permitted` (see [here](https://github.com/Homebrew/brew/issues/3228)). It looks like just the content, not the directory itself, must be owned by you (and can be owned by you anyway).
+Note that if you try to run `sudo chown -R $(whoiam) /usr/local` as suggested in the Stack Overflow thread, it fails on Mac High Sierra with `operation not permitted` (see [here](https://github.com/Homebrew/brew/issues/3228)). It looks like just the contents, not the directory itself, must be owned by you (and can be owned by you anyway).
 
 After that I managed to start the server and this is what I got:
 
