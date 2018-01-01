@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React-native 1 - 0 Carole
-date: 2018-01-01
+title: Getting up and running with React Native
+date: 2018-01-02
 ---
 
 Today, I meant to look into [react-native](https://facebook.github.io/react-native/). I know React (a little) but recently realised I had made some wrong assumptions about React Native: I thought the idea behind React and React-native was: **Learn once, write once, use everywhere**. It is NOT! The real motto is: **Learn once, use everywhere**, i.e. you learn the basics once but you can't have one code base targeting all platforms. What a disappointment... I thought with the help of some kind of web dark magic it was the case.
@@ -47,16 +47,26 @@ yarn start
 
 ![yarn start error]({{ "/assets/blog/react-native-app-yarn-start-error.png" | absolute_url }}){:height="80%" width="80%"}
 
-I chose to install watchman (arbitrarily, I don't know what solution is best). However, when installing it it errored:
+I chose to install watchman (arbitrarily, I don't know what solution is best). However, when installing it, it errored:
 
 ![brew install watchman error]({{ "/assets/blog/react-native-app-yarn-start-error.png" | absolute_url }}){:height="80%" width="80%"}
 
-According to this [thread](https://stackoverflow.com/questions/29319378/cant-link-pcre-thru-brew-in-max-os-yosemite) on stackoverflow, brew requires the content of the folder /user/local to be owned by you.
+According to this [thread](https://stackoverflow.com/questions/29319378/cant-link-pcre-thru-brew-in-max-os-yosemite) on Stack Overflow, brew requires the content of the folder /user/local to be owned by you.
 ```
 sudo chown -R $(whoiam) /usr/local/*
 brew link pcre
 ```
 And that solved the problem, I was able to start the server, yay!
 
-Note that if you try to run `sudo chown -R $(whoiam) /usr/local` as suggested in the stackoverflow thread, it fails on Mac High Sierra with `operation not permitted` (see [here](https://github.com/Homebrew/brew/issues/3228)). It looks like just the content, not the directory itself needs to be owned by you (and can be own by you).
+Note that if you try to run `sudo chown -R $(whoiam) /usr/local` as suggested in the Stack Overflow thread, it fails on Mac High Sierra with `operation not permitted` (see [here](https://github.com/Homebrew/brew/issues/3228)). It looks like just the content, not the directory itself, must be owned by you (and can be own by you anyway).
 
+After that I managed to start the server and this is what I got:
+
+![yarn start success]({{ "/assets/blog/react-native-yarn-start.png" | absolute_url }}){:height="80%" width="80%"}
+
+
+##### Step 4: install the Expo client
+
+I had never heard of the [Expo](https://expo.io) application before. Apparently, it allows the development of React Native application without having to install any Android or IOS SDK. It sounds like a great tool for users like me who knows React a little but don't know anything about developing mobile apps.
+
+I installed Expo on my Android phone and was able to see the bundled code in my app!
