@@ -4,11 +4,11 @@ title: Getting up and running with React Native
 date: 2018-01-02
 ---
 
-Today, I meant to look into [react-native](https://facebook.github.io/react-native/). I know React (a little) but recently realised I had made some wrong assumptions about React Native: I thought the idea behind React and React-native was: **Learn once, write once, use everywhere**. It is NOT! The real motto is: **Learn once, use everywhere**, i.e. you learn the basics once but you can't have one code base targeting all platforms. What a disappointment... I thought with the help of some kind of web dark magic it was the case.
+Today, I looked into [React Native](https://facebook.github.io/react-native/). I know React (a little) but recently realised I had made some wrong assumptions about React Native. I thought the idea behind React and React-native was: **Learn once, write once, use everywhere**. It is NOT! The real motto is: **Learn once, use everywhere**, i.e. you learn the basics once but you can't have one code base targeting all platforms. What a disappointment... I thought with the help of some kind of web dark magic it was the case.
 
-Anyway, since it is not the case and one needs to learn a few things that are React Native specific, off I went to learn the basic of React Native. It actually took me quite a while to get up and running as I met quite a few hick ups along the way.
+Anyway, since it is not the case and one needs to learn a few things that are React Native specific, off I went to learn the basic of React Native. It actually took me quite a while to get up and running as I met quite a few hiccups along the way.
 <br/>
-I planned to go through this [tutorial](https://facebook.github.io/react-native/docs/getting-started.html) on React Native website. In this post I am sharing my experience with the Getting Started section (yep, my post is actually longer than the Getting Started page haha).
+I plan to go through this [tutorial](https://facebook.github.io/react-native/docs/getting-started.html) on React Native website. In this post I will share my experience with the Getting Started section (yep, my post is actually longer than the Getting Started page haha).
 
 #### Step 1: install the tool create-react-native-app
 ```
@@ -26,7 +26,7 @@ create-react-native-app HelloWorld
 
 ![create-react-native-app error]({{ "/assets/blog/create-react-native-app-error.png" | absolute_url }}){:height="90%" width="90%"}
 
-I googled a bit trying to understand what was going on and why npm 5 wouldn't be supported by [create-react-native-app](https://github.com/react-community/create-react-native-app#installation). I haven't found the exact answer yet apart from `npm 5 is buggy`. The main suggestion to fix this problem is to downgrade npm to 4.x.x, but I don't really like the idea of downgrading, I think we should move forward, not backwards. So I searched a bit more and luckily came across a very useful comment on this [issue](https://github.com/react-community/create-react-native-app/issues/424):
+I googled a bit trying to understand what was going on and why npm 5 isn't supported by [create-react-native-app](https://github.com/react-community/create-react-native-app#installation). I haven't found the exact answer yet apart from `npm 5 is buggy`. The main suggestion to fix this problem is to downgrade npm to 4.x.x, but I don't really like the idea of downgrading, I think we should move forward, not backwards. So I searched a bit more and luckily came across a very useful comment on this [issue](https://github.com/react-community/create-react-native-app/issues/424):
 
 > when yarn is installed, CRNA already uses it by default to install packages.
 
@@ -54,7 +54,7 @@ brew link pcre
 ```
 And that solved the problem, I was able to start the server, yay!
 
-Note that if you try to run `sudo chown -R $(whoiam) /usr/local` as suggested in the Stack Overflow thread, it fails on Mac High Sierra with `operation not permitted` (see [here](https://github.com/Homebrew/brew/issues/3228)). It looks like just the content, not the directory itself, must be owned by you (and can be own by you anyway).
+Note that if you try to run `sudo chown -R $(whoiam) /usr/local` as suggested in the Stack Overflow thread, it fails on Mac High Sierra with `operation not permitted` (see [here](https://github.com/Homebrew/brew/issues/3228)). It looks like just the content, not the directory itself, must be owned by you (and can be owned by you anyway).
 
 After that I managed to start the server and this is what I got:
 
@@ -63,6 +63,6 @@ After that I managed to start the server and this is what I got:
 
 #### Step 4: install the Expo client
 
-I had never heard of the [Expo](https://expo.io) application before. Apparently, it allows the development of React Native application without having to install any Android or IOS SDK. It sounds like a great tool for users like me, i.e. who know React a little but don't know anything about developing mobile apps.
+I had never heard of the [Expo](https://expo.io) application before. Apparently, it allows the development of React Native application without having to install an Android or IOS SDK. It sounds like a great tool for users like me, i.e. who know React a little but don't know anything about developing mobile apps.
 
 I installed Expo on my Android phone and was able to see the bundled code in my app, phew!
