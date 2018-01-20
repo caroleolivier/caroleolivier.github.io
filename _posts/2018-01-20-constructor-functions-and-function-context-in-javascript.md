@@ -103,4 +103,4 @@ I am briefly mentioning strict mode here, because it changes the behaviour of `t
 
 There are many things I haven't mentioned here like the context of a function inside a class, or the context of an arrow function. I never had any problems with these. The context of a function call on an object is (usually) the object itself because of the way we (normally) call the function, i.e. `person.something()`. And the context of an arrow function is the one of the containing code (apparently it is called lexical context).
 
-Hopefully, from now on, I shall not be surprised by what the context of a function is.
+Hopefully, from now on, I shall not be surprised by what the context of a function is. Although, luckily, with ES6 and the addition of classes, it is less likely to be a problem.
