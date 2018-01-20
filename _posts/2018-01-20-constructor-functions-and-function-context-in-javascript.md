@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2018-01-20
-title: Constructor function and function context in JavaScript
+title: Constructor functions and function context in JavaScript
 ---
 
 Today, I spent some time looking into JavaScript constructor functions. I ended up reading (again...) about function context and it finally sunk in. Here are my findings.
@@ -10,7 +10,7 @@ Today, I spent some time looking into JavaScript constructor functions. I ended 
 
 #### Constructor Function
 
-First of all, what is a constructor function? A constructor function is a function that allows you to create an instance of an object when it is called. So every time you call it, you get a new object. It looks like that:
+First of all, what is a constructor function? A constructor function is a function that allows you to create an instance of an object when it is called. So every time you call it, you get a new object. It looks like this:
 
 ```javascript
 function Person(name, age) {
