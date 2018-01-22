@@ -19,7 +19,7 @@ function Person(name, age) {
 }
 ```
 
-And you call it like with the `new` keyword:
+And you call it with the `new` keyword:
 
 ```javascript
 const person = new Person('John', 40);
