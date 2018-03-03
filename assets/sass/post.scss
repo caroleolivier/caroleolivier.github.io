@@ -62,6 +62,12 @@ $post_subtitle: $post_color_6;;
             margin-bottom: 0;
         }
 
+        h6 {
+            color: $post_color_3;
+            font-size: 0.8em;
+            margin: 0;
+        }
+
         blockquote {
             border-left: solid 4px $post_color_20;
             background: $post_color_7;
