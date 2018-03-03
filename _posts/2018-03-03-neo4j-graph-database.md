@@ -4,7 +4,7 @@ title: Neo4j, a graph database
 date: 2018-03-03
 ---
 
-I went to a very cool meetup this week about [Neo4j](https://neo4j.com/), a graph database. It is not something I have had the chance to get my hands on yet, so it was great to get a taste of it. This post is a short introduction to graph database and a small example of what one can do with Neo4j.
+I went to a very cool meetup this week about [Neo4j](https://neo4j.com/), a graph database. It is not something I have had the chance to get my hands on before, so it was great to get a taste of it. This post is a short introduction to graph databases and a small example of what one can do with Neo4j.
 
 ### Graph databases
 
@@ -13,13 +13,13 @@ I went to a very cool meetup this week about [Neo4j](https://neo4j.com/), a grap
 > In computing, a graph database is a database that uses graph structures for semantic queries with nodes, edges and properties to represent and store data. A key concept of the system is the graph (or edge or relationship), which directly relates data items in the store.
 > [Wikipedia](https://en.wikipedia.org/wiki/Graph_database)
 
-So a graph database uses a graph at its core, this is very important, and to insist even more on the idea of graph:
+And to insist even more on the importance of relationships:
 
 > [...] a graph database is a database designed to treat the relationships between data as a first-class citizen in the data model.
 > [Neo4j](https://neo4j.com/developer/graph-database/)
 
 Based on these definitions and the experience I have working with relational databases, I feel like relational databases are good for storing data and dealing with very simple relationships (e.g. customer, account, which account belongs to which customer).
-On the other hand, graph databases are good for storing data together with their relationships and resolve complex relationships queries (e.g. people, connection, who are the friends of my friends of my friends).
+On the other hand, graph databases are good for storing data together with their relationships and resolve complex relationships queries (e.g. people, connections, who are the friends of my friends of my friends).
 <br/>This being said, I am very new to this world so don't take my word for granted!
 
 ##### Structure
@@ -108,4 +108,4 @@ Again super readable! We are simply traversing the graph and describing what we 
 
 <br/>
 
-And that is my full experience with graph database so far!
+And that is my full experience with graph databases so far!
