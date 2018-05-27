@@ -3,6 +3,11 @@ $about-icon-height: 5em;
 .about {
     width: 100%;
     padding: 0.5em 0;
+    line-height: 1.5;
+
+    a {
+        color: #ffe594;
+    }
 
     .presentation {
         height: 35em;
