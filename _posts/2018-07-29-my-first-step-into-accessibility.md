@@ -35,7 +35,7 @@ I have learnt how to properly use the screen reader on my MacBook (it's called V
 
 ##### Semantic HTML
 
-Using semantic HTML is crucial. It basically means that you should be using HTML element for what they are for and not disguise them for something they are not. A button should be an HTML button, not a div disguised as a button.
+Using semantic HTML is crucial. It basically means that you should be using HTML element for what they are for and not disguise them for something they are not. For a button use an HTML button, not a div disguised as a button.
 <br/>
 This is a great [video](https://www.youtube.com/watch?v=CZGqnp06DnI&index=27&list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g&t=0s) about it.
 
@@ -48,8 +48,12 @@ First, because some people cannot use a mouse (arthritis, broken arms, etc...). 
 
 ##### Accessibility Tree
 
-When you build a web page, think **Accessibility Tree**.
-This [video](https://www.youtube.com/watch?v=z8xUCzToff8) has some great intro information about it (around > 5 minutes).
+When you build a web page, think **Accessibility Tree**. The accessibility tree is the tree built by the browser and sent as input to the screen reader. So when building a web page, think about the accessibility tree first. Then if you want to visually improve your page, you can play with CSS.
+<br/>
+This [video](https://www.youtube.com/watch?v=z8xUCzToff8) has some great intro information about it (at around 5 minutes). You can couple it with this [article](https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/the-accessibility-tree). I like what they say about the accessibility tree:
+> You might visualize the accessibility tree as looking a bit like an old web page from the '90s: a few images, lots of links, perhaps a field and a button.
+
+😀 (<= I wonder how accessible this smiley is! On my list of things to check)
 
 
 ### Resources I highly recommend
