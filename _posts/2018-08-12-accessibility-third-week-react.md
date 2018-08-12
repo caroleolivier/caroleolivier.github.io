@@ -9,7 +9,7 @@ After some digging, I realise it was because of [React](https://reactjs.org/). I
 
 #### The problem
 
-This is the h2 element I am interesting in:
+This is the h2 element I am interested in:
 
 ![Accessibility tree]({{ "/assets/blog/meterreading_h2.png" | absolute_url }}){:height="40%" width="40%"}
 
@@ -49,7 +49,7 @@ The `span` isn't a problem but one may wonder why there is a `span` in the DOM. 
 >
 > [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span)
 
-I have used span to style indeed. But in this case the span is just wrapping the content of the `h2` element and has no purpose.
+I have previously used span for styling. But in this case the span is just wrapping the content of the `h2` element and has no purpose.
 It could (and should!) be removed.
 
 So I removed the span, but as expected it didn't fix the problem, there still were 3 items inside the `h1`: `Previous`, `electricity` and `reading` should not be in different groups, they should be one single string. What is going on?!
@@ -82,11 +82,11 @@ This is the HTML DOM:
 
 Ha! This is the "problem"! Well it's not really a problem but it makes sense!
 
-So basically in the first case, we are telling React there are two groups, one is a string and the other, well React will have to figure it out. It turns out it is a string in this case, but it could also be another React component.
+So basically in the first case, we are telling React there are two groups, one is a string and the other, well, React will have to figure it out. It turns out it is a string in this case, but it could also be another React component.
 <br/>
 While in the second case, we are telling React, I am passing you one group and it is a string.
 
-So, basically when concatenating strings, make sure you explicitly concatenate the strings and don't rely on React to do it for you. As we can see, it is not doing that, it is creating different groups for each part of the string.
+So, when concatenating strings, make sure you explicitly concatenate the strings and don't rely on React to do it for you. As we can see, it is not doing that, it is creating different groups for each part of the string.
 <br/>
 So here we are, I am better developer because of this accessibility bug hunting!
 
