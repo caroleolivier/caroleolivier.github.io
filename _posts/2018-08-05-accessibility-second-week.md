@@ -42,6 +42,6 @@ So as a rule, I have decided to not change focus programmatically on user input.
 Screen readers rely quite heavily on the HTML `id` attribute (for instance to know about the connection between a label and an input box). If your tree contains more than one element with the same ids, the screen reader will read out all the related elements. So elements wrongly labelled with the same ids will mess up the information read by screen readers! I won't go into more details about this problem now, but it is important to remember. I will try to dedicate a week to labelling where this problem will be clearly highlighted.
 
 
-### What's next
+### What's next?
 
 Next week, I am not sure yet what I will be focusing (haha) on. There are so many things to learn! But I'll carry on picking simple things to look at and fix and learn by doing :)
