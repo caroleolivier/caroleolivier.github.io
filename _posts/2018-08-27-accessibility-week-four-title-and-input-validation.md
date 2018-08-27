@@ -6,7 +6,7 @@ date: 2018-08-27
 
 Work has been mega busy so I had to miss a week of accessibility the week before last.
 
-But last week was slightly better and although I haven't dedicated as much time as I'd like to, I still found the time to look a bit at title and alert. In this post, I'll describe what I have learnt.
+But last week was slightly better and although I haven't dedicated as much time as I'd like to, I still found the time to look a bit at titles and alerts. In this post, I'll describe what I have learnt.
 
 ### Title
 
@@ -20,7 +20,7 @@ This is the title of my last blog post about Accessibility and React.
 
 ![HTML title example]({{ "/assets/blog/html_title.png" | absolute_url }}){:height="40%" width="40%"}
 
-It always felt to me like a details to be honest. I never read or even look at it when I load a page. Although, thinking about it, it is super useful for navigation when multiple tabs are opened.
+It always felt to me like a detail to be honest. I never read or even look at it when I load a page. Although, thinking about it, it is super useful for navigation when multiple tabs are opened.
 
 However, in terms of accessibility, it's really important. When a page is loaded this is the first thing that screen readers read out loud.
 On the [developer.mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title#Accessibility_concerns) page, they recommend to be super descriptive about the page. So do not neglect them!
@@ -30,18 +30,18 @@ I even read somewhere people recommending using `title` as a way to convey alert
 
 ### Input Validation
 
-Originally, I was hoping to address the topic of alert on a web page (alert on forms, alert on input validation, random alerts). However, I quickly realised this is a complex topic and I have a loooooot to learn, I have barely scratched the surface!
+Originally, I was hoping to address the topic of alerts on a web page (alerts on forms, alerts on input validation, random alerts). However, I quickly realised this is a complex topic and I have a loooooot to learn, I have barely scratched the surface!
 <br/>
-So, in this section I will share what I have learnt about input validation and alert.
+So, in this section I will share what I have learnt about input validation and alerts.
 
 This is the problem: how do you make an input accessible, particularly when it errors?
 
 ![Input validation with error]({{ "/assets/blog/input_validation.png" | absolute_url }}){:height="40%" width="40%"}
 
 Here are a few things to consider:
-* **Do not rely only on colours, combine it with visual indicator**
+* **Do not rely only on colours, combine it with other visual indicator**
 <br/> If you are colour blind you may not see it, but the text box border and the icon are red.
-<br/> The warning icon helps indicating there is an error on the input.
+<br/> The warning icon helps to indicate there is an error on the input.
 * **Use simple and clear messaging to indicate the user there is an error**
 * **For screen reader users, speak out loud!**
 <br/> This was the new part to me and the one I am going to focus on here: it is called _alerting_.
@@ -62,7 +62,7 @@ Do not use alert window. There are **not** accessible (try it on your screen rea
 
 ##### The role alert
 
-One way to give immediate feedback to the user is to wrap your input into a `section` and give it the role `alert`. This indicates to the screen reader that the HTML element is a live region, i.e. will dynamically change and needs to be watched out. So when the input contains error and you display an error message, the screen reader will read out the error message, this is really cool!
+One way to give immediate feedback to the user is to wrap your input into a `section` and give it the role `alert`. This indicates to the screen reader that the HTML element is a live region, i.e. will dynamically change and needs to be watched. So when the input contains error and you display an error message, the screen reader will read out the error message, this is really cool!
 <br/>
 This the bit of HTML I added to make my input more accessible :)
 ```html
