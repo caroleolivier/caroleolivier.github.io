@@ -28,13 +28,13 @@ Another great thing about having a coach is the books and tools they can recomme
 <br/>I read this really good book called [The Culture Map](https://www.erinmeyer.com/book/) by Erin Meyer. I have learnt so much from it, about culture, people and myself. It definitely helped making Carole better already :)
 <br/>And so I want to share a few things I have learnt from it.
 
-##### The Culture Map
+## The Culture Map
 
 I was about to write a short review about my main takeaways, but then found this great article on [Business Insider](https://www.businessinsider.com/the-culture-map-8-scales-for-work-2015-1?r=US&IR=T). I would recommend at least reading this review if not the whole book.
 
 I would just add a couple of more personal points to this.
 
-###### Communication
+### Communication
 
 If you read the review, they talk about low/high context languages and giving feedback.
 <br/>As a French person, one thing I hadn't realised was that my language is quite high context, higher than American or English for instance. However, when it comes to evaluating and giving feedback, the French are very direct. And so this made me realise two things:
@@ -42,14 +42,14 @@ If you read the review, they talk about low/high context languages and giving fe
 <br/>The second thing is that when I give feedback, I am to the point. I slowly realised it can make people uncomfortable and worse be misinterpreted as I don't care.
 
 
-###### Persuading
+### Persuading
 
 The part about persuading was eye opening. In her book, Erin Meyer talks about principle (the French) vs application (the English) first.
 <br/>It's been really fun to observe the world around me keeping this in mind. I do now notice the differences in discussions.
 <br/>French and British approach argumentations and presentations very differently. We often start with the theory, while the British tend to start with an example. This is really fun. And useful!
 
 
-###### Leading
+### Leading
 
 Something I realised reading the Culture Map is that there are roughly two types of leaders. This is what I think (please note this isn't part of the book).
 <br/>One type is the __master__ type. They lead because they have more knowledge, wisdom, experience. They are kind of superior in a way. They are admired and trusted by their team to lead them in the right direction.

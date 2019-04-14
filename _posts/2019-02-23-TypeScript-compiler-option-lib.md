@@ -15,7 +15,7 @@ I have been using TypeScript for a little while now, but I must admit I have nev
 }
 ```
 
-### What is the lib option?
+## What is the lib option?
 
 According to TypeScript [documentation](https://www.typescriptlang.org/docs/handbook/compiler-options.html), the `lib` option is:
 
@@ -55,7 +55,7 @@ You can check this by exploring the type files in the lib folder (locally if you
 
 So this solves the mystery around how `lib` is used.
 
-### Why is it useful?
+## Why is it useful?
 
 This comes handy when you're developing web applications and you want to make sure your code is compatible with the browsers you are targeting.
 
@@ -66,7 +66,7 @@ For instance, `includes` is not supported by Internet Explorer, see [MDN](https:
 
 So, we know that `includes` is not compatible with IE. What should/can you do next?
 
-#### Not use it :)
+### Not use it :)
 
 In the case of `includes`, you could implement the method yourself or use an external library like `lodash`.
 <br/>
@@ -75,7 +75,7 @@ This means missing out on the latest shiny JavaScript features which is sad for 
 And so this is where polyfills become handy.
 
 
-#### Use polyfills
+### Use polyfills
 
 > A polyfill is a piece of code (usually JavaScript on the Web) used to provide modern functionality on older browsers that do not natively support it.
 <br/>
