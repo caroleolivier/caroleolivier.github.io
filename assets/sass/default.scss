@@ -1,26 +1,7 @@
 $font_family: 'Roboto', sans-serif;
-$default_background: linear-gradient(to bottom, #717171 9%, #989898 69%, #ababab 100%);
-
-html,body {
-    height: 100%;
-    margin: 0px;
-}
 
 body {
-    display: flex;
-    flex-direction: column;
-    
-    background: linear-gradient(to bottom, #717171 9%, #989898 69%, #ababab 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
     font-family: $font_family;
+    font-size: 18px;
     -webkit-font-smoothing: antialiased;
-}
-
-.app {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
 }

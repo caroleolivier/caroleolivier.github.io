@@ -1,23 +1,19 @@
 .website-header {
     .menu {
         display: flex;
-        justify-content: flex-end;
-        padding: 1em 0em;
+        padding: 0 0 2rem 0;
 
         a {
-            color: white;
+            color: black;
             font-weight: 600;
             display: block;
-            padding: 0px 16px;
-            width: 150px;
-            text-align: center;
             text-decoration: none;
             text-transform: uppercase;
-            
+            padding-right: 2rem;
+
             span {
                 &:hover {
                     border-style: solid;
-                    border-color: white;
                     border-width: 0 0 2px 0;
                     padding: 0 0 2px 0;
                 }

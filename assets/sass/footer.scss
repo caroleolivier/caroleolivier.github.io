@@ -1,34 +1,5 @@
 .footer {
-    .mylinks {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-        a {
-            padding: 0 2em;
-            font-size: 1.8em;
-            color: #d2d2d2;
-
-            &:hover {
-                color: #e6e5e5;
-            }
-        }
-    }
-
-    .credits {
-        display: flex;
-        justify-content: center;
-        padding: 1em;
-        color: #dadada;
-        font-size: 10px;
-
-        a {
-            color: inherit;
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
 }

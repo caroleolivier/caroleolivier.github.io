@@ -1,7 +1,12 @@
-<div class="welcome">
-    <div class="me">
-        <h1 class="name">Carole Olivier</h1>
-        <h2 class="title">Software Engineer</h2>
+<div class="posts">
+    <div class="post-list">
+        <table>
+            {% for post in site.posts %}
+            <tr>
+                <td class="date">{{ post.date | date: "%B %-d %Y" }}</td>
+                <td class="post-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></td>
+            </tr>
+            {% endfor %}
+        </table>
     </div>
-    <img src="assets/images/big-ben.svg" alt="London" class="london">
 </div>

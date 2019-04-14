@@ -1,98 +1,84 @@
-$post_color_1: #1a68a9;
-$post_color_3: #1f79c3;
-$post_color_4: #50aefd;
-$post_color_6: #97AAC3;
-$post_color_7: #fbfbfb;
-$post_color_20: #ffc526;
-
-$post_background: white;
-$post_title: $post_color_1;;
-$post_subtitle: $post_color_6;;
-
 .post-page {
-    margin: 40px auto 60px auto;
-    width: 70%;
-    padding: 20px 70px 70px 70px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    background: $post_background;
+    margin: 2rem 0rem;
+    line-height: 1.75rem;
+    // width: 70%;
+    // padding: 20px 70px 70px 70px;
+    // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    // background: $post_background;
 
     .post-header {
         .title {
-            margin-bottom: 10px;
-            font-size: 3em;
-            color: $post_title;
-            line-height: 1.1em;
         }
     
         .meta {
-            color: $post_subtitle;
+            font-size: 0.8rem;
             margin: 20px 0px;
         }
     }
 
-    .post-content {
-        margin-top: 40px;
-        font-size: 17px;
-        line-height: 1.5em;
+    // .post-content {
+    //     margin-top: 40px;
+    //     font-size: 17px;
+    //     line-height: 1.5em;
 
-        h1 {
-            font-size: 3em;
-            color: $post_color_1;
-            line-height: 0.9em;
-        }
+    //     h1 {
+    //         font-size: 3em;
+    //         color: $post_color_1;
+    //         line-height: 0.9em;
+    //     }
 
-        h2 {
-            color: $post_color_3;
-            font-size: 2.5em;
-        }
+    //     h2 {
+    //         color: $post_color_3;
+    //         font-size: 2.5em;
+    //     }
 
-        h3 {
-            color: $post_color_3;
-            font-size: 2em;
-        }
+    //     h3 {
+    //         color: $post_color_3;
+    //         font-size: 2em;
+    //     }
 
-        h4 {
-            color: $post_color_3;
-            font-size: 1.5em;
-        }
+    //     h4 {
+    //         color: $post_color_3;
+    //         font-size: 1.5em;
+    //     }
 
-        h5 {
-            color: $post_color_3;
-            font-size: 1em;
-            margin-bottom: 0;
-        }
+    //     h5 {
+    //         color: $post_color_3;
+    //         font-size: 1em;
+    //         margin-bottom: 0;
+    //     }
 
-        h6 {
-            color: $post_color_3;
-            font-size: 0.8em;
-            margin: 0;
-        }
+    //     h6 {
+    //         color: $post_color_3;
+    //         font-size: 0.8em;
+    //         margin: 0;
+    //     }
 
-        blockquote {
-            border-left: solid 4px $post_color_20;
-            background: $post_color_7;
-            font-style: italic;
+    //     blockquote {
+    //         border-left: solid 4px $post_color_20;
+    //         background: $post_color_7;
+    //         font-style: italic;
 
-            p {
-                margin-left: 10px;
-            }
-        }
+    //         p {
+    //             margin-left: 10px;
+    //         }
+    //     }
 
-        code {
-            background: $post_color_7;
-        }
+    //     code {
+    //         background: $post_color_7;
+    //     }
 
-        pre.highlight {
-            background: $post_color_7;
-        }
+    //     pre.highlight {
+    //         background: $post_color_7;
+    //     }
         
-        a {
-            text-decoration: none;
-            color: $post_color_4;
+    //     a {
+    //         text-decoration: none;
+    //         color: $post_color_4;
     
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
+    //         &:hover {
+    //             text-decoration: underline;
+    //         }
+    //     }
+    // }
 }

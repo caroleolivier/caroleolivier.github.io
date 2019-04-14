@@ -1,14 +1,28 @@
-.welcome {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
+$post_background: white;
 
-    padding: 0 10em;
-    color: white;
-
-    .london {
-        height: 25em;
+.posts {
+    .post-list {
+        table {
+        
+            td {
+                padding: 0.5rem 0px;
+            }
+    
+            .date {
+                width: 12rem;
+            }
+                    
+            .post-title {
+                font-weight: bold;
+                a {
+                    text-decoration: none;
+                    color: black;
+    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
     }
 }
