@@ -1,6 +1,7 @@
 <div class="posts">
     <div class="post-list">
         <table>
+            <caption hidden aria-hidden="false">List of blog posts with date and title</caption>
             {% for post in site.posts %}
             <tr>
                 <td class="date">{{ post.date | date: "%B %-d %Y" }}</td>
