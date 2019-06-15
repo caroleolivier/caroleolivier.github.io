@@ -4,7 +4,7 @@
             <caption hidden aria-hidden="false">List of blog posts with date and title</caption>
             {% for post in site.posts %}
             <tr>
-                <td class="date">{{ post.date | date: "%B %-d %Y" }}</td>
+                <td class="date">{{ post.date | date: "%Y %B %d" }}</td>
                 <td class="post-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></td>
             </tr>
             {% endfor %}
