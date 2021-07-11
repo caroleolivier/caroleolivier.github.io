@@ -42,7 +42,7 @@ Establishes a connection.
 It's kind of in client mode.
 
 ```
-nc localhost -p 4004
+nc localhost 4004
 ```
 
 Executing these 2 commands in 2 consoles create a connection and one can send data from either console :)
