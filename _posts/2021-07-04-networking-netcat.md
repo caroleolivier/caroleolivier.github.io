@@ -1,6 +1,6 @@
 ---
 layout: post
-title: networking - netcat
+title: Networking - netcat
 date: 2021-07-04
 ---
 
