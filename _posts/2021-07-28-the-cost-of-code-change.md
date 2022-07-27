@@ -13,7 +13,7 @@ A few notes:
 * Being worth it
 <br> It'll depend on the team, the time, the situation.
 <br>I'll touch on this in a later post.
-<br>Here we'll focus on what's going on when one does a code change.
+<br>Here I'll focus on the things that happen when one does a code change.
 
 * Code change
 <br>I refer to code change as anything that'll lead and follow a modification to your code base (e.g. a new feature, a refactor).
@@ -53,7 +53,7 @@ Even very trivial code changes go through a similar (although shorter) version o
 
 ### What's the hidden cost of a code change?
 
-With this (great) baking analogy in mind, let's a look at what's involved in making a code change.
+With this (great) baking analogy in mind, let's take a look at what's involved in making a code change.
 
 #### 🤔 Thinking & brainstorming
 
