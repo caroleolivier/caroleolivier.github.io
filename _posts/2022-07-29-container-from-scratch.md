@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Container from scratch
-date: 2022-07-28
+date: 2022-07-29
 ---
 
 This brilliant [video](https://www.youtube.com/watch?v=8fi7uSYlOdc) basically shows the principles behind the creation of containers.  
