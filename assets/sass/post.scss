@@ -11,4 +11,23 @@
             margin: 20px 0px;
         }
     }
+
+
+    table {
+        text-align: left;
+        border-collapse: collapse;
+        border: 1px solid darkgrey;
+        th {
+            padding-bottom: 0.5rem;
+            padding-left: 0.5rem;
+            padding-right: 1rem;
+        }
+        td {
+            border-top: 1px solid darkgrey;
+            padding-right: 1rem;
+            padding-left: 0.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+    }
 }
