@@ -1,9 +1,26 @@
-$font_family: 'Roboto', sans-serif;
+$font_family:  "PT serif", serif;
 
 body {
     font-family: $font_family;
     font-size: 18px;
+    line-height: 1.75em;
+    letter-spacing: .70px;
     -webkit-font-smoothing: antialiased;
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+@media (min-width: 30rem) {
+    body {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+@media (min-width: 60rem) {
+    body {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        max-width: 60rem;
+    }
 }

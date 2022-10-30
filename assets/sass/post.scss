@@ -1,7 +1,5 @@
 .post-page {
-    margin: 1rem 0rem;
-    line-height: 1.75rem;
-
+    line-height: 1.75em;
     .post-header {
         .title {
         }
@@ -29,5 +27,11 @@
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
         }
+    }
+
+    blockquote {
+        background: #ebebeb;
+        margin: 0;
+        padding: 0.5rem 0rem 0.5rem 2rem;
     }
 }
