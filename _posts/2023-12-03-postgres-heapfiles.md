@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PostgreSQL - Heap Files and FSM
+title: PostgreSQL - heap files and FSM
 date: 2023-12-03
 ---
 
