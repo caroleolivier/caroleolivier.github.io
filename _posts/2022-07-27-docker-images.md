@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What's a Docker image?
+title: Container - What's a Docker image?
 date: 2022-07-27
 ---
 
@@ -28,8 +28,7 @@ The [scratch image](https://hub.docker.com/_/scratch) is the smallest layer you 
 It must be there.  
 It's an empty file system.
 
-There are hello-world examples [here](https://github.com/docker-library/hello-world).  
-
+There are hello-world examples [here](https://github.com/docker-library/hello-world).
 
 ## Interesting commands
 
@@ -52,7 +51,6 @@ You'll need to then tar the layer and you'll see it's a bunch of files.
 
 Note that for multi layers images, you'll have to tar each layer individually.
 
-
 ### Inspecting an image
 
 ```
@@ -62,6 +60,5 @@ $ docker inspect image_name
 It gives a bunch of info about an image.
 
 One info is where the layers for the images are stored on the host so you can explore the content from there too.
-
 
 Soooo that demystifies what a Docker image is: a file system :)
