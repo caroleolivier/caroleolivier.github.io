@@ -75,7 +75,7 @@ Here are the results:
 
 Here is the script:
 
-```
+```js
 function readByRows(matrix: number[][], rows: number, columns: number) {
   const start = performance.now();
 
