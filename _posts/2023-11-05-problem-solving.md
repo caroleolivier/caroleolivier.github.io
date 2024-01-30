@@ -21,7 +21,7 @@ You start a job at a new company and you're asked to build a cash balance report
 
 I first ask myself what domain I am operating in.  
 A cash balance report could mean many things.
-Sometimes I know, if it's a domain I am familiar with, sometimes I am dont or am unsure and so I speak to:
+Sometimes I know, if it's a domain I am familiar with, sometimes I dont or am unsure and so I speak to:
 * stakeholders
 * colleagues
 * the Internet
