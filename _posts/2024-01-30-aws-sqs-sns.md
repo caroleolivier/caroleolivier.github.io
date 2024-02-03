@@ -8,7 +8,7 @@ A little refresher on [AWS SQS](https://aws.amazon.com/sqs/) vs [AWS SNS](https:
 
 ## AWS SQS
 
-![AWS SQS mental model]({{ "/assets/blog/aws-sqs.png" | absolute_url }}){:height="30%" width="30%"}
+![AWS SQS mental model]({{ "/assets/blog/aws-sqs.png" | absolute_url }}){:height="80%" width="80%"}
 
 With SQS, there's 1 queue, so consumers "competes" or shares the load from the queue.  
 Whenever a consumer pulls a message from the queue and successfully acknowledges it, then it's not visible to any other consumers.
@@ -28,7 +28,7 @@ Another case of message replay is down to AWS internal as they only guarantee "a
 
 ## AWS SNS
 
-![AWS SNS mental model]({{ "/assets/blog/aws-sns.png" | absolute_url }}){:height="30%" width="30%"}
+![AWS SNS mental model]({{ "/assets/blog/aws-sns.png" | absolute_url }}){:height="80%" width="80%"}
 
 AWS SNS is used when you want to deliver the same message to **multiple subscribers**.
 
