@@ -17,15 +17,16 @@ But here are concepts I found pretty interesting and cool:
 ## Versioning
 
 Every transaction that runs in SQL has a unique incremental version.
+The SQL below displays the transaction id of the current transaction.  
+Whenever a statement is run, it's incremented.
 
 ```sql
 SELECT txid_current();
 ```
 
-This displays the transaction id of the current transaction.  
-Whenever a statement is run, it's incremented.
+👉 The transaction id is used to determine what a transaction can and cannot see.
 
-There are more interesting columns that indicate when a row was inserted:
+There are other interesting columns that indicate when a row was inserted:
 
 `xmin` and `xmax` are called [system columns](https://www.postgresql.org/docs/16/ddl-system-columns.html).  
 They're not visible by default, but we can explicitly query them.
@@ -43,7 +44,9 @@ first_name | last_name | xmin | xmax
 (1 row)
 ```
 
-These 2 columns are super useful and determine what a transaction can and cannot see.
+Here the row was inserted by transaction with id 773.
+
+👉 These 2 columns are also used to determine what a transaction can and cannot see.
 
 🚨 Some rows sometimes have `xmax` but are actually visible, see [this](https://www.cybertec-postgresql.com/en/whats-in-an-xmax/).  
 So `xmax` alone doesn't indicate whether a row is visible or not.
@@ -52,7 +55,7 @@ So `xmax` alone doesn't indicate whether a row is visible or not.
 
 It's quite fun to start 2 transactions in parallel and observe what happens when calling and modifying tables from the different transactions.
 
-With the default configuration of PostgreSQL `Read Committed`, transaction sees the effect of committed transactions (no matter if the transaction started before or after, if it's committed, then the current transaction sees it).
+With the default configuration of PostgreSQL (`Read Committed`), transaction sees the effect of committed transactions (no matter if the transaction started before or after, if it's committed, then the current transaction sees it).
 
 **Before starting anything**
 
