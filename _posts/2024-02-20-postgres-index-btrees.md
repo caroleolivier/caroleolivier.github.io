@@ -23,6 +23,8 @@ Their internal structure looks like this:
 
 This is taken from this great [video](https://www.youtube.com/watch?v=78MgONXf5Es&list=PL1XF9qjV8kH0ghGRGo3_f-FWqWvAbv1dh) (from Professor Torsten Grust again 🙂)
 
+Basically values are stored in a tree where the leaf contains a pointer to where the row for that value is actually stored.
+
 ### Inspecting
 
 This creates a table with an index
