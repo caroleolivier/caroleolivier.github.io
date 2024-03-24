@@ -20,7 +20,7 @@ The only thing one can do is try to anticipate these times.
 But when it happens **internally**, e.g. you're blocked by your colleague Bob, this is where things can change.  
 Together with Bob:
 
-> you can build a culture of **self-service** and reduce the dependencies between employees.
+> you can build a culture of **self-service** and reduce dependencies between employees.
 
 There are many things we can all do to develop a culture of self-service.
 
@@ -32,20 +32,20 @@ What does it mean in practice?
 
 1. Contribute to your company wiki generously.  
    You've learnt how to debug service X => document it.
-   You've learnt how to use the complicated holiday systems => document it.
+   You've learnt how to use the complicated holiday system => document it.
 
 2. Ask questions in the open.  
    (no private DMs in messaging system!)
 
 3. Create company Lunch & Learn.  
    (Or similar 🙂)
-   It doesn't have to be long, it doesn't have to take hours, but create a forums where people can share with each others.
-   And encourage sharing! We're lucky enough to be in jobs where we learn a lot, so there's plenty to share!
+   It doesn't have to be long, it doesn't have to take hours, but create a forum where people can share with each others.
+   And encourage sharing! We're lucky enough to be in jobs where we learn a lot, so there's plenty to share.
 
 4. Don't hesitate to repeat your message.  
    Key decisions/learnings need to be shared multiple times for them to sink in.  
    So share in meetings, by emails, by messages.  
-   Your company mission should be one of them. Share it, share it and never stops.
+   Your company mission should be one of them. Share it, share it and never stop.
 
 5. Keep stating the obvious.  
    What is obvious to you is not obvious to Bob who just joined last week or Alice who just swapped teams.
@@ -58,4 +58,4 @@ What does it mean in practice?
 Sharing and recording knowledge was already powerful before.
 
 But with the advancement of AI, it's become even more powerful; everything we record can now be fed to magical company Chatbots 🤖 like this [one](https://dust.tt/) and help us self-serve internally 🪄  
-And so here is another reason to record your conversation with Bob.
+And so here is another reason for you to record your conversation with Bob.
