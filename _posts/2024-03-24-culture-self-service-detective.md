@@ -12,13 +12,14 @@ Knowledge is very important, but learning how to find/acquire knowledge is as im
 
 ## 2. Learn and Teach _how_ to find the answer, not just the answer
 
-Whenever you ask a question, don't just settle for the answer, ask **how** you can find the answer yourself.
+So, you're at work, and you got a question for your wonderful colleague Bob ?  
+Ask Bob, but don't just settle for the answer, ask **how** you can find the answer yourself next time.
 
 > And become a great detective 🕵️‍♀️.
 
 For instance:
 
-- _what time is the weekly meeting?_  
+- _what time is the weekly team meeting?_  
   answer: 6pm Monday  
   how to find the answer: check the team calendar
 
@@ -30,4 +31,4 @@ These are trivial examples, but you can apply this logic to everything.
 
 👉 So if you've asked a question, make sure you understand how to find the answer next time.
 
-👉 And similarly! If you're asked a question, be generous and don't just give the answer. That's the easy part. Grow your colleague and show them how to find the answer on their own next time.
+👉 And similarly! If you're asked a question, be generous and don't just give the answer. That's the easy part. Grow your colleague and show them how to find the answer on their own next time (and maybe share and document this generously in your company wiki 🙂)
